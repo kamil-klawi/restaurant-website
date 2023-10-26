@@ -1,0 +1,48 @@
+$color-black: #000000;
+$color-white: #ffffff;
+$color-blue: #0093DD;
+
+.popularDishes {
+  padding: 4rem;
+  margin: auto;
+  width: 70%;
+  background: $color-white;
+  box-shadow: 0 0 4rem rgba(0,0,0, 0.2);
+  border-bottom: 0.25rem solid $color-blue;
+  transform: translate(0, -20%);
+  position: relative;
+  z-index: 9999;
+
+  .popularDishes__header {
+    color: $color-black;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .popularDishes__breakline {
+    margin: 2rem auto 4rem;
+    width: 4rem;
+    height: 0.2rem;
+    background-color: $color-blue;
+  }
+
+  .popularDishes__list {
+    margin-bottom: 4rem;
+  }
+
+  .popularDishes__btn {
+    color: $color-white;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $color-blue;
+  }
+}
