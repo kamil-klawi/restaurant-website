@@ -1,0 +1,92 @@
+$color-blue: #0093DD;
+$color-black: #000000;
+$color-white: #ffffff;
+
+.seasonOffer {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: 
+    'image1 image1 article article article article'
+    'image1 image1 article article article article'
+    'image2 image2 article article article article'
+    'image2 image2 image3 image3 image3 image3'
+    'image2 image2 image3 image3 image3 image3';
+  gap: 1rem;
+  position: relative;
+  background-color: transparent;
+  transform: translate(0, -25%);
+
+  .seasonOffer__image {
+    border-bottom: 0.25rem solid $color-blue;
+    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.15);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .image__a {
+    grid-area: image1;
+    background-image: url('../../assets/images/26-przystawka.jpg');
+  }
+  
+  .image__b {
+    grid-area: image2;
+    background-image: url('../../assets/images/25-deska-serow.jpg');
+  }
+
+  .image__c {
+    grid-area: image3;
+    background-image: url('../../assets/images/24-kanapka09.jpg');
+  }
+
+  .seasonOffer__content {
+    grid-area: article;
+    padding: 2rem 4rem;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 0.25rem solid $color-blue;
+    background-color: $color-white;
+    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.15);
+
+    .seasonOffer__header {
+      color: $color-black;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 0.8px;
+    }
+
+    .seasonOffer__breakLine {
+      margin: 2rem 0;
+      width: 5rem;
+      height: 0.2rem;
+      background-color: $color-blue;
+    }
+
+    .seasonOffer__text {
+      color: $color-black;
+      font-weight: 300;
+      letter-spacing: 0.8px;
+      margin-bottom: 2rem;
+      opacity: 0.65;
+
+      &_black {
+        opacity: 1;
+        font-weight: 600;
+      }
+    }
+
+    .seasonOffer__btn {
+      padding: 0.75rem 2rem;
+      color: $color-white;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: $color-blue;
+    }
+  }
+}
