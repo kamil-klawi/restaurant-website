@@ -22,6 +22,7 @@ import {
   dataDesserts,
 } from '../../utils/dataMenuList';
 import Newsletter from '../../components/Newsletter/Newsletter';
+import { dataMenuRouterLinks } from '../../utils/dataRouterList';
 
 function Menu() {
   useDocumentTitle('Menu');
@@ -35,7 +36,7 @@ function Menu() {
             A la française - restauracja francuska /&nbsp;
             <span className="capitalize">{Pathname()}</span>
           </div>
-          <MenuRouterList />
+          <MenuRouterList package={dataMenuRouterLinks} />
         </div>
         <Card
           id="popularDishes"
