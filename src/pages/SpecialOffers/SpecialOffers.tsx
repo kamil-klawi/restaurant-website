@@ -18,7 +18,7 @@ function SpecialOffers() {
       <Header />
       <div className={s.specialOffer}>
         <div>
-          <div className={`my-8`}>
+          <div className={`${s.specialOffer__pathname} my-8`}>
             A la française - restauracja francuska /&nbsp;
             <span className="capitalize">{Pathname()}</span>
           </div>

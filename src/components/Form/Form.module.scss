@@ -1,0 +1,70 @@
+$color-black: #000000;
+$color-white: #ffffff;
+$color-blue: #0093DD;
+
+.form {
+  margin: 4rem 0;
+
+  &__radioGroup {
+    color: $color-black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    opacity: 0.75;
+
+    .radioGroup__header {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+
+  &__firstname,
+  &__email,
+  &__phone {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    width: 100%;
+    color: $color-black;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    border: .1rem solid rgba(0,0,0,0.2);
+    opacity: 0.75;
+  }
+
+  &__accept {
+    margin: 3rem 0;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    display: flex;
+
+
+    .form__checkbox {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 1rem;
+    }
+
+    .form__link {
+      color: $color-blue;
+      border-bottom: 0.1rem solid $color-blue;
+    }
+  }
+
+  .form__btn {
+    padding: 0.75rem 5rem;
+    color: $color-white;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    background-color: $color-blue;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+}

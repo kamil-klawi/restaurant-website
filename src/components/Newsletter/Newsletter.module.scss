@@ -94,7 +94,8 @@ $color-blue: #0093DD;
         }
 
         .newsletter__link {
-          border-bottom: 0.2rem solid $color-blue;
+          color: $color-blue;
+          border-bottom: 0.1rem solid $color-blue;
         }
       }
     }
