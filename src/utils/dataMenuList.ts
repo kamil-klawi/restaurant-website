@@ -224,3 +224,45 @@ export const dataDesserts: MenuItemProps[] = [
     price: '21',
   },
 ];
+
+export const dataEasterOffer: MenuItemProps[] = [
+  {
+    name: 'Śniadanie francuskie',
+    ingredients: 'Croissant, brioche, domowe konfitury, masło solone',
+    price: '26',
+  },
+  {
+    name: 'Croque-madame',
+    ingredients:
+      'Zapiekana kanapka z sosem beszamelowym, szynką i serem, jajko sadzone',
+    price: '34',
+  },
+];
+
+export const dataGroupOffer: MenuItemProps[] = [
+  {
+    name: 'Śniadanie francuskie',
+    ingredients: 'Croissant, brioche, domowe konfitury, masło solone',
+    price: '26',
+  },
+  {
+    name: 'Croque-madame',
+    ingredients:
+      'Zapiekana kanapka z sosem beszamelowym, szynką i serem, jajko sadzone',
+    price: '34',
+  },
+];
+
+export const dataMayOffer: MenuItemProps[] = [
+  {
+    name: 'Śniadanie francuskie',
+    ingredients: 'Croissant, brioche, domowe konfitury, masło solone',
+    price: '26',
+  },
+  {
+    name: 'Croque-madame',
+    ingredients:
+      'Zapiekana kanapka z sosem beszamelowym, szynką i serem, jajko sadzone',
+    price: '34',
+  },
+];
