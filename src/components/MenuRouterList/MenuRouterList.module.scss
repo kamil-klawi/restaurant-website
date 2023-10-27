@@ -1,0 +1,29 @@
+$color-black: #000000;
+
+.menuList {
+  padding-bottom: 0.5rem;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 0.1rem solid $color-black;
+
+  .menuList__item {
+    padding-right: 2rem;
+    list-style-type: none;
+    list-style: none;
+
+    .menuList__link {
+      text-transform: uppercase;
+      color: $color-black;
+      font-size: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-decoration: none;
+      letter-spacing: 0.07rem;
+      opacity: 0.75;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+$color-black: #000000;
+
+.menu {
+  width: 70%;
+  margin: auto;
+
+  .menu__pathname {
+    color: $color-black;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    opacity: 0.45;
+  }
+}

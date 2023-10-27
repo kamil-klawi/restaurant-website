@@ -5,10 +5,12 @@ import Hero from '../../components/Hero/Hero';
 import Newsletter from '../../components/Newsletter/Newsletter';
 import PopularDishes from '../../components/PopularDishes/PopularDishes';
 import SeasonOffer from '../../components/SeasonOffer/SeasonOffer';
+import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 
 import s from './Homepage.module.scss';
 
 function Homepage() {
+  useDocumentTitle('A la française - restauracja francuska');
   return (
     <>
       <Header />
