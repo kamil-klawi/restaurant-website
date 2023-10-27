@@ -29,13 +29,15 @@ function SwipSlide() {
   return (
     <>
       <div className={s.slide__content}>
-        <h3 className="text-xl font-bold text-white tracking-widest uppercase">
+        <h3
+          className={`${s.slide__subheader} text-md font-bold text-white uppercase`}
+        >
           nasza oferta
         </h3>
-        <h2 className={`${s.slide__header} text-6xl text-white`}>
+        <h2 className={`${s.slide__header} text-white`}>
           Zestawy degustacyjne oryginalnych francuskich serów
         </h2>
-        <p className={`${s.slide__text} text-xl text-white`}>
+        <p className={`${s.slide__text} text-md text-white`}>
           Zamówicie u nas deski francuskich serów wraz z innymi przekąskami oraz
           cateringi specjalne.⬇️SKLEP ONLINE⬇️
         </p>

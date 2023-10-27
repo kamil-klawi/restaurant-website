@@ -15,6 +15,11 @@ $color-white: #ffffff;
   justify-content: center;
   align-items: center;
 
+  &_second {
+    transform: translate(0%, -40%);
+    background: linear-gradient(180deg, rgba(2, 13, 44, 0.35) 0%, rgba(5, 15, 41, 0.7) 100%), url("../../assets/images/23-spotkanie06.jpg");
+  }
+
   .homepage__header {
     color: $color-white;
     font-size: 4rem;

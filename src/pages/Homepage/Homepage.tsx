@@ -18,7 +18,7 @@ function Homepage() {
         <h3 className={s.homepage__header}>Czego u nas skosztujesz?</h3>
       </div>
       <PopularDishes />
-      <div className={s.homepage__image}>
+      <div className={`${s.homepage__image} ${s.homepage__image_second}`}>
         <h3 className={s.homepage__header}>Oferta specjalna</h3>
       </div>
       <SeasonOffer />

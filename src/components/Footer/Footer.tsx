@@ -68,7 +68,7 @@ function Footer() {
             </div>
           </div>
           <div className={s.footer__copyright}>
-            <p>Copyright &Copy; A La Francaise 2021</p>
+            <p>Copyright &copy; A La Francaise 2021</p>
             <p>Realizacje IMSET.IT</p>
           </div>
         </div>
