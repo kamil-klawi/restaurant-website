@@ -4,11 +4,7 @@ import Header from '../../components/Header/Header';
 import MenuRouterList from '../../components/MenuRouterList/MenuRouterList';
 import Newsletter from '../../components/Newsletter/Newsletter';
 import { Pathname } from '../../utils/Pathname';
-import {
-  dataEasterOffer,
-  dataGroupOffer,
-  dataMayOffer,
-} from '../../utils/dataMenuList';
+import { dataCardSpecialMenu } from '../../utils/dataCardMenu';
 import { dataSpecialOfferRouterLinks } from '../../utils/dataRouterList';
 import s from './SpecialOffers.module.scss';
 
@@ -25,27 +21,15 @@ function SpecialOffers() {
           <MenuRouterList package={dataSpecialOfferRouterLinks} />
         </div>
         <div>
-          <Card
-            package={dataEasterOffer}
-            id="easterOffer"
-            title="Oferta wielkanocna"
-            description="Poniżej przedstawiamy obecnie najczęściej zamawiane pozycje z menu
-            sezonu 2023"
-          />
-          <Card
-            package={dataGroupOffer}
-            id="groupOffer"
-            title="Oferta grupowa"
-            description="Poniżej przedstawiamy obecnie najczęściej zamawiane pozycje z menu
-            sezonu 2023"
-          />
-          <Card
-            package={dataMayOffer}
-            id="mayOffer"
-            title="Oferta majówkowa"
-            description="Poniżej przedstawiamy obecnie najczęściej zamawiane pozycje z menu
-            sezonu 2023"
-          />
+          {dataCardSpecialMenu &&
+            dataCardSpecialMenu.map((dish) => (
+              <Card
+                package={dish.package}
+                id={dish.id}
+                title={dish.title}
+                description={dish.description}
+              />
+            ))}
         </div>
       </div>
       <Newsletter />
