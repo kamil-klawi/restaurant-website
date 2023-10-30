@@ -4,7 +4,12 @@ import s from './RadioButton.module.scss';
 function RadioButton(props: RadioButtonProps) {
   return (
     <div className={s.radioButton}>
-      <input type="radio" name={props.name} className={s.radioButton__radio} />
+      <input
+        type="radio"
+        name={props.name}
+        className={s.radioButton__radio}
+        checked={props.checked}
+      />
       <label htmlFor={props.name} className={s.radioButton__label}>
         {props.label}
       </label>

@@ -17,6 +17,26 @@ $color-blue: #0093DD;
     }
   }
 
+  &__datepicker,
+  &__timepicker,
+  &__counterpicker {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+
+    .datepicker__label,
+    .timepicker__label,
+    .counterpicker__label {
+      margin: 1rem 0;
+      color: $color-black;
+      font-size: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+      opacity: 0.75;
+    }
+  }
+
   &__firstname,
   &__email,
   &__phone {

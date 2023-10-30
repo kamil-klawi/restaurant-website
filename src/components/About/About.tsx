@@ -29,13 +29,18 @@ function About() {
           <div className={s.card__breakLine} />
         </div>
         <p className={s.card__text}>
-          Restauracja jest dziełem Joanny i Dominique'a Chesnais. Dominique jest
-          francuskim szefem kuchni z długoletnim międzynarodowym doświadczeniem
-          pochodzącym z urokliwej Bretanii. Jest on inspiracją dla swoich
-          kucharzy, tworzących dopracowane dania o niepowtarzalnym smaku.
-          Oryginalny wystrój lokalu stanowi podstawę jego charakteru, a pełen
-          pasji zespół buduje rodzinną atmosferę. W skrócie, jest po francusku,
-          czyli A la Francaise.
+          Wszystkie kulinarne specjały w A la francaise są dziełem Dominique'a,
+          kucharza z Bretanii. Od dziecka marzył o gotowaniu i pieczeniu dla
+          innych. Zawodu uczył się w szkole gastronomicznej w Dinard, gdzie w
+          1997 r. otrzymał dyplom BTS. Zanim osiadł w Gdańsku szlifował swój
+          talent w restauracjach Anglii, Irlandii oraz rodzimej Bretanii.
+        </p>
+        <p className={s.card__text}>
+          Współwłaścicielką restauracji jest, pochodząca z Mazur, Joanna. Po
+          ukończeniu Technikum Hotelarskiego w Mrągowie kontynuowała naukę na UJ
+          w Krakowie kończąc ją tytułem magistra Zarządzania w turystce. Sztuki
+          kelnerstwa uczyła się w restauracjach na Mazurach, w Krakowie oraz we
+          Francji.
         </p>
       </div>
     </div>
