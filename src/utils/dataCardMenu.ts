@@ -1,3 +1,4 @@
+import i18next from 'i18next';
 import { CardProps } from '../types/CardProps';
 import {
   dataPopularDishes,
@@ -13,71 +14,63 @@ import {
   dataGroupOffer,
   dataMayOffer,
 } from './dataMenuList';
+import '../locales/i18n';
 
 export const dataCardMenu: CardProps[] = [
   {
     package: dataPopularDishes,
     id: 'popularDishes',
-    title: 'Najpopularniejsze dania',
-    description:
-      'Poniżej przedstawiamy obecnie najczęściej zamawiane pozycje z menu sezonu 2023',
+    title: i18next.t('navigation.menu.popularDishes'),
+    description: i18next.t('popularDishesText'),
   },
   {
     package: dataBreakfast,
     id: 'breakfast',
-    title: 'Śniadania',
-    description:
-      'Dopracowany i schludnie podany fundament każdego dnia, wcale nie musi być skomplikowany. Wedle opinii, to właśnie śniadania zapewniły nam miejsce na trójmiejskim podium.',
+    title: i18next.t('navigation.menu.breakfast'),
+    description: i18next.t('breakfastText'),
   },
   {
     package: dataSandwichBaguette,
     id: 'sandwichBaguette',
-    title: 'Kanapki z bagietki',
-    description:
-      'Francuska klasyka w najlepszym wydaniu, czyli codziennie świeżo wypieczone bagietki w wybranej odsłonie.',
+    title: i18next.t('navigation.menu.sandwichBaguette'),
+    description: i18next.t('sandwichBaguetteText'),
   },
   {
     package: dataCroques,
     id: 'croques',
-    title: 'Croques',
-    description:
-      'Francuska klasyka w najlepszym wydaniu, czyli codziennie świeżo wypieczone bagietki w wybranej odsłonie.',
+    title: i18next.t('navigation.menu.croques'),
+    description: i18next.t('croquesText'),
   },
   {
     package: dataAppetizers,
     id: 'appetizers',
-    title: 'Przystawki',
-    description:
-      'Spróbuj popularne pozycje w oryginalnej wersji lub francuskie przysmaki, których próżno szukać gdzie indziej, bo któż nie skusi się na prawdziwą zupę cebulową bądź domową foie gras?!',
+    title: i18next.t('navigation.menu.appetizers'),
+    description: i18next.t('appetizersText'),
   },
   {
     package: dataMainDishes,
     id: 'mainDishes',
-    title: 'Dania główne',
-    description:
-      'Niecodzienne kompozycje francuskiego stylu. Kompletne dania, które zaspokoją głodnych wrażeń śmiałków.',
+    title: i18next.t('navigation.menu.mainDishes'),
+    description: i18next.t('mainDishesText'),
   },
 
   {
     package: dataGalettes,
     id: 'galettes',
-    title: 'Galettes',
-    description:
-      'Bretoński styl w najczystszej postaci, bezglutenowe gryczane naleśniki podane w sposób niespotykany nigdzie indziej w Trójmieście. Oryginał jest tylko jeden - Galette Complète, ale u nas dostępny jest z całą rodzinką. Dobierz galette według swoich ulubionych składników.',
+    title: i18next.t('navigation.menu.galettes'),
+    description: i18next.t('galettesText'),
   },
   {
     package: dataCrepes,
     id: 'crepes',
-    title: 'Crépes',
-    description:
-      'Słodka fantazja znana każdemu bez wyjątku już od dzieciństwa. Podobno te w A la francaise najlepiej smakują o każdej porze dnia. Nasza domowa nutella i domowy słony karmel, często ułatwiają podjęcie tej decyzji. Klasykiem w tej kategorii niezmiennie pozostaje legendarny, przesiąknięty Francją - Crêpe Suzette.',
+    title: i18next.t('navigation.menu.crepes'),
+    description: i18next.t('crepesText'),
   },
   {
     package: dataDesserts,
     id: 'desserts',
-    title: 'Desery',
-    description:
-      'Prawdziwe chwile szczęścia to czekolada wypływająca z Fondant, łącząca się z lodami waniliowymi. Lecz niezależnie od wyboru, każdy z naszych deserów zabierze Cię prosto do raju.',
+    title: i18next.t('navigation.menu.desserts'),
+    description: i18next.t('dessertsText'),
   },
 ];
 
@@ -85,22 +78,19 @@ export const dataCardSpecialMenu: CardProps[] = [
   {
     package: dataEasterOffer,
     id: 'easterOffer',
-    title: 'Oferta wielkanocna',
-    description:
-      'Poniżej przedstawiamy obecnie najczęściej zamawiane pozycje z menu sezonu 2023',
+    title: i18next.t('navigation.offers.easterOffer'),
+    description: i18next.t('popularDishesText'),
   },
   {
     package: dataGroupOffer,
     id: 'groupOffer',
-    title: 'Oferta grupowa',
-    description:
-      'Poniżej przedstawiamy obecnie najczęściej zamawiane pozycje z menu sezonu 2023',
+    title: i18next.t('navigation.offers.groupOffer'),
+    description: i18next.t('popularDishesText'),
   },
   {
     package: dataMayOffer,
     id: 'mayOffer',
-    title: 'Oferta majówkowa',
-    description:
-      'Poniżej przedstawiamy obecnie najczęściej zamawiane pozycje z menu sezonu 2023',
+    title: i18next.t('navigation.offers.mayOffer'),
+    description: i18next.t('popularDishesText'),
   },
 ];

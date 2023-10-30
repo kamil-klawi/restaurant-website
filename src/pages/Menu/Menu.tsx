@@ -12,8 +12,10 @@ import Newsletter from '../../components/Newsletter/Newsletter';
 
 //  styles
 import s from './Menu.module.scss';
+import { useTranslation } from 'react-i18next';
 
 function Menu() {
+  const { t } = useTranslation();
   useDocumentTitle('Menu');
 
   return (
@@ -22,7 +24,7 @@ function Menu() {
       <div className={s.menu}>
         <div>
           <div className={`${s.menu__pathname} my-8`}>
-            A la française - restauracja francuska /&nbsp;
+            {t('homeURL')} /&nbsp;
             <span className="capitalize">{Pathname()}</span>
           </div>
           <MenuRouterList package={dataMenuRouterLinks} />

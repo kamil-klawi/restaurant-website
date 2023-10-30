@@ -1,7 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
-import s from './Hero.module.scss';
+import { useTranslation } from 'react-i18next';
 
+import s from './Hero.module.scss';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -26,23 +27,23 @@ function Hero() {
 }
 
 function SwipSlide() {
+  const { t } = useTranslation();
   return (
     <>
       <div className={s.slide__content}>
         <h3
           className={`${s.slide__subheader} text-md font-bold text-white uppercase`}
         >
-          nasza oferta
+          {t('homepage.hero.subTitle')}
         </h3>
         <h2 className={`${s.slide__header} text-white`}>
-          Zestawy degustacyjne oryginalnych francuskich serów
+          {t('homepage.hero.title')}
         </h2>
         <p className={`${s.slide__text} text-md text-white`}>
-          Zamówicie u nas deski francuskich serów wraz z innymi przekąskami oraz
-          cateringi specjalne.⬇️SKLEP ONLINE⬇️
+          {t('homepage.hero.text')}
         </p>
         <a href="/store" className={s.slide__btn}>
-          zamów teraz
+          {t('homepage.hero.btn')}
         </a>
       </div>
       <div className={s.slide__media}>

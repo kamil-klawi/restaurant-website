@@ -10,8 +10,10 @@ import Input from '../Input/Input';
 import DatePick from '../Picker/DatePick';
 import TimePick from '../Picker/TimePick';
 import CounterPick from '../Picker/CounterPick';
+import { useTranslation } from 'react-i18next';
 
 function Form() {
+  const { t } = useTranslation();
   const formik = useFormik({
     initialValues: {
       firstname: '',
@@ -20,12 +22,12 @@ function Form() {
     },
     validationSchema: Yup.object({
       firstname: Yup.string()
-        .min(3, 'To pole wymaga przynajmniej 3 znaków')
-        .required('Wymagane pole'),
+        .min(3, t('invalid.min3Characters'))
+        .required(t('invalid.required')),
       email: Yup.string()
-        .email('Nieprawidłowy adres e-mail')
-        .required('Wymagane pole'),
-      phone: Yup.string().required('Wymagane pole'),
+        .email(t('invalid.email'))
+        .required(t('invalid.required')),
+      phone: Yup.string().required(t('invalid.required')),
     }),
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
@@ -36,18 +38,28 @@ function Form() {
     <div>
       <form className={s.form} onSubmit={formik.handleSubmit}>
         <div className={`${s.form__radioGroup} my-6 border-b-2 border-t-2`}>
-          <h4 className={`${s.radioGroup__header} mt-6`}>Temat kontaktu:</h4>
+          <h4 className={`${s.radioGroup__header} mt-6`}>
+            {t('contact.topic')}:
+          </h4>
           <div className="flex my-6">
-            <RadioButton checked={true} label="rezerwacja" name="radio" />
             <RadioButton
-              checked={false}
-              label="impreza okolicznościowa"
+              checked={true}
+              label={t('contact.reservation')}
               name="radio"
             />
-            <RadioButton checked={false} label="catering" name="radio" />
             <RadioButton
               checked={false}
-              label="zamówienie online"
+              label={t('contact.party')}
+              name="radio"
+            />
+            <RadioButton
+              checked={false}
+              label={t('contact.catering')}
+              name="radio"
+            />
+            <RadioButton
+              checked={false}
+              label={t('contact.onlineOrder')}
               name="radio"
             />
           </div>
@@ -56,21 +68,21 @@ function Form() {
           <div className="flex justify-between">
             <div className={s.form__datepicker}>
               <label htmlFor="" className={s.datepicker__label}>
-                Data:&nbsp;
+                {t('contact.date')}:&nbsp;
                 <span className="text-blue-400">*</span>
               </label>
               <DatePick />
             </div>
             <div className={s.form__timepicker}>
               <label htmlFor="" className={s.timepicker__label}>
-                Godzina:&nbsp;
+                {t('contact.time')}:&nbsp;
                 <span className="text-blue-400">*</span>
               </label>
               <TimePick />
             </div>
             <div className={s.form__counterpicker}>
               <label htmlFor="" className={s.counterpicker__label}>
-                Ilość osób:&nbsp;
+                {t('contact.people')}:&nbsp;
                 <span className="text-blue-400">*</span>
               </label>
               <CounterPick />
@@ -80,8 +92,8 @@ function Form() {
             id="firstname"
             name="firstname"
             type="text"
-            label="Imię:"
-            placeholder="Wpisz imię"
+            label={t('contact.firstName')}
+            placeholder={t('contact.firstNamePlaceholder')}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.firstname}
@@ -104,8 +116,8 @@ function Form() {
               id="email"
               name="email"
               type="email"
-              label="E-mail:"
-              placeholder="Wpisz adres e-mail"
+              label={t('contact.email')}
+              placeholder={t('contact.emailPlaceholder')}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.email}
@@ -127,8 +139,8 @@ function Form() {
               id="phone"
               name="phone"
               type="phone"
-              label="Telefon:"
-              placeholder="Podaj numer telefonu"
+              label={t('contact.phone')}
+              placeholder={t('contact.phonePlaceholder')}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.phone}
@@ -153,17 +165,15 @@ function Form() {
             name="privacy_police"
           />
           <p>
-            Wyrażam zgodę na przetwarzanie danych moich osobowych przez firmę A
-            La Francaise, zgodnie z ustawą o ochronie danych osobowych. Więcej
-            w&nbsp;
+            {t('contact.description')}&nbsp;
             <a className={s.form__link} href="/privacy_police">
-              politykę prywatności
+              {t('policy')}
             </a>
             .
           </p>
         </div>
         <button className={s.form__btn} type="submit">
-          Wyślij
+          {t('contact.btn')}
         </button>
       </form>
     </div>

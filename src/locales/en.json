@@ -1,0 +1,266 @@
+{
+  "homeURL": "A la française - French restaurant",
+  "invalid": {
+    "required": "Required field",
+    "email": "Invalid email address",
+    "min3Characters": "This field requires at least 3 characters"
+  },
+  "navigate": "navigation",
+  "info": "information",
+  "copyright": "Copyright © A La Francaise 2021",
+  "createBy": "IMSET.IT Projects",
+  "policy": "privacy policy",
+  "popularDishesText": "Below are the currently most frequently ordered items from the 2023 season menu",
+  "breakfastText": "A well-prepared and neatly presented foundation every day does not have to be complicated. According to opinions, it was breakfast that earned us a place on the podium in Tricity.",
+  "sandwichBaguetteText": "French classics at their best, i.e. freshly baked baguettes every day in a selected version.",
+  "croquesText": "French classics at their best, i.e. freshly baked baguettes every day in a selected version.",
+  "appetizersText": "Try popular items in their original version or French delicacies that you can't find anywhere else, because who wouldn't be tempted by real onion soup or homemade foie gras?!",
+  "mainDishesText": "Unusual French-style compositions. Complete dishes that will satisfy adventure-hungry adventurers.",
+  "galettesText": "Breton style in its purest form, gluten-free buckwheat pancakes served in a way not available anywhere else in the Tricity. There is only one original - Galette Complète, but here it is available for the whole family. Choose the galette according to your favorite ingredients.",
+  "crepesText": "A sweet fantasy known to everyone since childhood. They say those at A la Francaise taste best at any time of the day. Our homemade Nutella and homemade salted caramel often make it easier to make this decision. The classic in this category remains the legendary, steeped in France - Crêpe Suzette.",
+  "dessertsText": "The real moments of happiness are the chocolate flowing from Fondant, combining with vanilla ice cream. But regardless of your choice, each of our desserts will take you straight to paradise.",
+  "contact": {
+    "header": "Contact form",
+    "firstText": "We invite you to make online reservations and organize special events. We also encourage you to use catering.",
+    "secondText": "At the same time, we would like to point out that each submitted form must be confirmed by a return contact from the restaurant.",
+    "address": "Address",
+    "topic": "contact topic",
+    "reservation": "reservation",
+    "party": "occasional party",
+    "catering": "catering",
+    "onlineOrder": "online order",
+    "date": "Date",
+    "time": "Time",
+    "people": "Number of people",
+    "firstName": "Name",
+    "firstNamePlaceholder": "Enter name",
+    "email": "Email",
+    "emailPlaceholder": "Enter email address",
+    "phone": "Phone",
+    "phonePlaceholder": "Enter phone number",
+    "description": "I consent to the processing of my personal data by A La Francaise, in accordance with the Personal Data Protection Act. More in",
+    "btn": "Send"
+  },
+  "navigation": {
+    "header": {
+      "homepage": "homepage",
+      "bonjour": "bonjour",
+      "menu": "menu",
+      "specialOffer": "special offer",
+      "store": "store",
+      "contact": "contact"
+    },
+    "menu": {
+      "popularDishes": "Most popular dishes",
+      "breakfast": "Breakfast",
+      "sandwichBaguette": "Baguette sandwiches",
+      "croques": "Croques",
+      "appetizers": "Appetizers",
+      "mainDishes": "Main dishes",
+      "galettes": "Galettes",
+      "crepes": "Crépes",
+      "desserts": "Desserts"
+    },
+    "offers": {
+      "easterOffer": "Easter Offer",
+      "groupOffer" : "Group Offer",
+      "mayOffer": "May Offer"
+    },
+    "information": {
+      "voucher": "gift voucher",
+      "delivery": "delivery cost",
+      "deliveryArea": "delivery area",
+      "statute": "regulations",
+      "policyPrivacy": "privacy policy"
+    }
+  },
+  "homepage": {
+    "hero": {
+      "subTitle": "our offer",
+      "title": "Tasting sets of original French cheeses",
+      "text": "You can order French cheese boards along with other snacks and special catering from us.⬇️ONLINE SHOP⬇️",
+      "btn": "order now"
+    },
+    "about": {
+      "firstHeader": "Our menu",
+      "secondHeader": "About us",
+      "firstText": "We have a wide range of breakfasts, lunches and dinners in the spirit of original French cuisine, and our meals are complemented by great wines.",
+      "secondText": "All culinary specialties in A la francaise are the work of Dominique, a chef from Brittany. Since childhood, he dreamed of cooking and baking for others. He learned his profession at the culinary school in Dinard, where in 1997 he received a BTS diploma. Before settling in Gdańsk, he honed his talent in restaurants in England, Ireland and his native Brittany.",
+      "thirdText": "The co-owner of the restaurant is Joanna, from Masuria. After graduating from the Hotel Technical Secondary School in Mrągowo, she continued her education at the Jagiellonian University in Krakow, graduating with a master's degree in Tourism Management. She learned the art of waiting in restaurants in Masuria, Krakow and France. ",
+      "btn": "check menu"
+    },
+    "firstSlogan": "What can you taste here?",
+    "secondSlogan": "Special Offer",
+    "btnCheckAllMenu": "check full menu",
+    "seasonOffer": {
+      "header": "Seasonal offer, catering",
+      "subText": "An informal meeting with friends over a Raclette? Or an elegant birthday party with a delicious Fraisier cake?",
+      "text": "It's up to you how and what you celebrate with us, and it's up to us to provide you with delicious taste experiences, in a Breton atmosphere and a pleasant atmosphere. A home evening with a board of French cheeses and cold cuts or full catering on the occasion... or without occasions, with personal collection or delivery in the Tricity. There are many occasions for feasting, and their arrangement only with A la Francaise.",
+      "btn": "check current offer"
+    }
+  },
+  "newsletter": {
+    "header": "Newsletter",
+    "text": "Subscribe and stay up to date with our offer and promotions!",
+    "btn": "SIGN UP",
+    "placeholder": "ENTER EMAIL ADDRESS",
+    "description": "By subscribing to the newsletter, you consent to the processing of your personal data by A la française and accept"
+  },
+  "menu": {
+    "frenchBreakfast": {
+      "name": "French breakfast",
+      "ingredients": "Croissant, brioche, homemade jam, salted butter"
+    },
+    "croqueMadame": {
+      "name": "CROQUE MADAME",
+      "ingredients": "Baked sandwich with ham, béchamel sauce and cheese, served with a fried egg"
+    },
+    "PtitDej": {
+      "name": "French Ptit déj",
+      "ingredients": "Brioche, croissant or pain au chocolat, jam and salted butter"
+    },
+    "frenchOmlette": {
+      "name": "French omelette",
+      "ingredients": "With ham, chives and Emmental cheese"
+    },
+    "polishBreakfast": {
+      "name": "Polish breakfast",
+      "ingredients": "Scrambled eggs in butter, cottage cheese, ham, cheese and tomato"
+    },
+    "englishBreakfast": {
+      "name": "English breakfast",
+      "ingredients": "Fried eggs, bacon, sausage, mushrooms, beans and tomato"
+    },
+    "parisianBrunch": {
+      "name": "Parisian brunch",
+      "ingredients": "French cheese and cold cuts, fried egg, tomato, gherkins, homemade jam and croissant"
+    },
+    "painPerdu": {
+      "name": "Pain perdu",
+      "ingredients": "Sweet French toast with fruit and jam"
+    },
+    "homemadeGranola": {
+      "name": "Homemade granola",
+      "ingredients": "Granola with natural yogurt and fruit"
+    },
+    "oatmeal": {
+      "name": "Oatmeal",
+      "ingredients": "Oatmeal with banana and raisins"
+    },
+    "goat": {
+      "name": "Goat cheese",
+      "ingredients": "goat cheese, onion jam, tomatoes, lettuce"
+    },
+    "chicken": {
+      "name": "Chicken",
+      "ingredients": "Chicken, bacon, egg, Caesar sauce, tomatoes, and lettuce"
+    },
+    "driedFrenchSausage": {
+      "name": "dried French sausage",
+      "ingredients": "Dried French sausage, melted raclette cheese, gherkins, tomatoes, lettuce"
+    },
+    "pie": {
+      "name": "With pâté",
+      "ingredients": "Breton pâté, gherkins, tomatoes, lettuce"
+    },
+    "croqueVege": {
+      "name": "Croque vege",
+      "ingredients": "Baked sandwich with béchamel sauce, goat cheese, sun-dried tomatoes, herbes de Provence and honey"
+    },
+    "croqueSaumon": {
+      "name": "Croque-Saumon",
+      "ingredients": "Baked sandwich with béchamel sauce, salmon, olives and cheese"
+    },
+    "snails": {
+      "name": "Burgundy snails",
+      "ingredients": "6 pieces, with baguette and garlic butter"
+    },
+    "tapas": {
+      "name": "Tapas",
+      "ingredients": "Portion for 1-2 people: bacon with plum, croutons with goose rillettes and gherkin, and pancakes with Emmental and French Rosette sausage"
+    },
+    "frenchCheese": {
+      "name": "French cheese board",
+      "ingredients": "200g, with baguette"
+    },
+    "frenchCheeseAndMeat": {
+      "name": "A board of French cheeses and cold cuts",
+      "ingredients": "300g, with baguette"
+    },
+    "bakedTomatoCream": {
+      "name": "Baked tomato cream",
+      "ingredients": "Roasted tomatoes, basil pesto and crème fraîche"
+    },
+    "frenchOnionSoup": {
+      "name": "French onion soup",
+      "ingredients": "with croutons and Cantal cheese"
+    },
+    "raclette": {
+      "name": "Raclette",
+      "ingredients": "Raclette - Melted Alpine cheese, cold meats, baked potatoes, baguette and lettuce"
+    },
+    "duckLeg": {
+      "name": "Duck leg",
+      "ingredients": "Cassoulet, i.e. baked beans with duck leg, sausage and vegetables, French style"
+    },
+    "cocotteFish": {
+      "name": "Fish cocotte",
+      "ingredients": "Breton-style fish and mussels casserole, vegetables with spinach"
+    },
+    "set": {
+      "name": "Set",
+      "ingredients": "Ham, fried egg, Emmentaler cheese, cherry tomatoes, balsamic sauce"
+    },
+    "papaj": {
+      "name": "Papaj",
+      "ingredients": "Mushrooms, spinach, fried egg, Emmental cheese, French Rosette sausage or goat cheese"
+    },
+    "rural": {
+      "name": "Rural",
+      "ingredients": "Black pudding, bacon, apple, onion jam, and cider sauce"
+    },
+    "ocean": {
+      "name": "Ocean",
+      "ingredients": "Smoked salmon, fried egg, sun-dried tomatoes, spinach and crème fraiche"
+    },
+    "pancake": {
+      "name": "Pancake of your choice",
+      "ingredients": "butter and sugar / homemade jam / honey / homemade salted caramel / homemade Nutella"
+    },
+    "pancakeMascarpone": {
+      "name": "Pancake with mascarpone",
+      "ingredients": "mascarpone and fruit"
+    },
+    "pancakeBanana": {
+      "name": "Pancake with banana",
+      "ingredients": "Pancake with banana, homemade Nutella, whipped cream and a scoop of ice cream"
+    },
+    "crepeSuzette": {
+      "name": "Crépe Suzette",
+      "ingredients": "Buttery pancake with oranges, flambéed with Cointreau liqueur"
+    },
+    "fondantChocolate": {
+      "name": "Chocolate Fondant",
+      "ingredients": "Homemade chocolate Fondant cake, seasonal fruit, whipped cream and a scoop of ice cream"
+    },
+    "homemadeChocolateCream": {
+      "name": "Homemade crème brûlée",
+      "ingredients": ""
+    },
+    "traditionalBreton": {
+      "name": "Traditional Breton gluten-free buckwheat pancakes",
+      "ingredients": "Pancakes served with lettuce and homemade vinaigrette"
+    }
+  },
+  "pathname": {
+    "menu": "menu",
+    "specialOffers": "special offers",
+    "store": "store",
+    "contact": "contact"
+  },
+  "cart": {
+    "header": "Products in basket",
+    "description": "No products in cart.",
+    "btn": "Go to store"
+  }
+}

@@ -1,7 +1,12 @@
+import { changeLanguage } from 'i18next';
+import { useTranslation } from 'react-i18next';
 import alafrancaiseLogo from '../../assets/images/a_la_francaise_logo.png';
 import s from './Header.module.scss';
 
 function Header() {
+  const handleLanguage = (language: string) => {
+    changeLanguage(language);
+  };
   return (
     <header className={s.header}>
       <nav className={s.nav}>
@@ -15,13 +20,16 @@ function Header() {
         </a>
         <MenuList />
         <div className={s.nav__lang}>
-          <a href="/" className={s.lang__link}>
+          <button onClick={() => handleLanguage('en')} className={s.lang__link}>
             en
-          </a>
+          </button>
           <span>|</span>
-          <a href="/" className={`${s.lang__link} ${s.lang__link_active}`}>
+          <button
+            onClick={() => handleLanguage('pl')}
+            className={`${s.lang__link} ${s.lang__link_active}`}
+          >
             pl
-          </a>
+          </button>
         </div>
         <a href="/cart" className={s.nav__cart}>
           <CartIcon />
@@ -32,31 +40,32 @@ function Header() {
 }
 
 function MenuList() {
+  const { t } = useTranslation();
   return (
     <ul className={s.nav__list}>
       <li className={s.nav__item}>
         <a href="/" className={`${s.nav__link} ${s.nav__link_active}`}>
-          bonjour
+          {t('navigation.header.bonjour')}
         </a>
       </li>
       <li className={s.nav__item}>
         <a href="/menu" className={s.nav__link}>
-          menu
+          {t('navigation.header.menu')}
         </a>
       </li>
       <li className={s.nav__item}>
         <a href="/special_offers" className={s.nav__link}>
-          oferty specjalne
+          {t('navigation.header.specialOffer')}
         </a>
       </li>
       <li className={s.nav__item}>
         <a href="/store" className={s.nav__link}>
-          sklep
+          {t('navigation.header.store')}
         </a>
       </li>
       <li className={s.nav__item}>
         <a href="/contact" className={s.nav__link}>
-          kontakt
+          {t('navigation.header.contact')}
         </a>
       </li>
     </ul>

@@ -1,28 +1,32 @@
+import { useTranslation } from 'react-i18next';
 import s from './Footer.module.scss';
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <>
       <div className={s.footer}>
         <div className="container mx-auto">
           <div className={s.footer__table}>
             <div className={s.footer__section}>
-              <h4>nawigacja</h4>
+              <h4>{t('navigate')}</h4>
               <ul>
                 <li>
-                  <a href="/">strona główna</a>
+                  <a href="/">{t('navigation.header.homepage')}</a>
                 </li>
                 <li>
-                  <a href="/menu">menu</a>
+                  <a href="/menu">{t('navigation.header.menu')}</a>
                 </li>
                 <li>
-                  <a href="/special_offers">oferta specjalna</a>
+                  <a href="/special_offers">
+                    {t('navigation.header.specialOffer')}
+                  </a>
                 </li>
                 <li>
-                  <a href="/store">sklep</a>
+                  <a href="/store">{t('navigation.header.store')}</a>
                 </li>
                 <li>
-                  <a href="/contact">kontakt</a>
+                  <a href="/contact">{t('navigation.header.contact')}</a>
                 </li>
               </ul>
             </div>
@@ -30,19 +34,23 @@ function Footer() {
               <h4>informacje</h4>
               <ul>
                 <li>
-                  <a href="/voucher">voucher podarunkowy</a>
+                  <a href="/voucher">{t('navigation.information.voucher')}</a>
                 </li>
                 <li>
-                  <a href="/delivery">koszt dostawy</a>
+                  <a href="/delivery">{t('navigation.information.delivery')}</a>
                 </li>
                 <li>
-                  <a href="/delivery_area">obszar dostawy</a>
+                  <a href="/delivery_area">
+                    {t('navigation.information.deliveryArea')}
+                  </a>
                 </li>
                 <li>
-                  <a href="/statute">regulamin</a>
+                  <a href="/statute">{t('navigation.information.statute')}</a>
                 </li>
                 <li>
-                  <a href="/privacy_police">polityka prywatności</a>
+                  <a href="/privacy_police">
+                    {t('navigation.information.policyPrivacy')}
+                  </a>
                 </li>
               </ul>
             </div>
@@ -50,13 +58,13 @@ function Footer() {
               <h4>kontakt</h4>
               <ul>
                 <li>
-                  <h5>Adres:</h5>
+                  <h5>{t('contact.address')}:</h5>
                 </li>
                 <li>
                   <p>ul. Spichrzowa 24, 80-750 Gdańsk - Śródmieście</p>
                 </li>
                 <li>
-                  <h5>Telefon:</h5>
+                  <h5>{t('contact.phone')}:</h5>
                 </li>
                 <li>
                   <p>58 765 11 12</p>
@@ -68,8 +76,8 @@ function Footer() {
             </div>
           </div>
           <div className={s.footer__copyright}>
-            <p>Copyright &copy; A La Francaise 2021</p>
-            <p>Realizacje IMSET.IT</p>
+            <p>{t('copyright')}</p>
+            <p>{t('createBy')}</p>
           </div>
         </div>
         <div className={s.footer__map}>

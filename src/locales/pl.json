@@ -1,0 +1,266 @@
+{
+  "homeURL": "A la française - restauracja francuska",
+  "invalid": {
+    "required": "Wymagane pole",
+    "email": "Nieprawidłowy adres e-mail",
+    "min3Characters": "To pole wymaga przynajmniej 3 znaków"
+  },
+  "navigate": "nawigacja",
+  "info": "informacje",
+  "copyright": "Copyright © A La Francaise 2021",
+  "createBy": "Realizacje IMSET.IT",
+  "policy": "politykę prywatności",
+  "popularDishesText": "Poniżej przedstawiamy obecnie najczęściej zamawiane pozycje z menu sezonu 2023",
+  "breakfastText": "Dopracowany i schludnie podany fundament każdego dnia, wcale nie musi być skomplikowany. Wedle opinii, to właśnie śniadania zapewniły nam miejsce na trójmiejskim podium.",
+  "sandwichBaguetteText": "Francuska klasyka w najlepszym wydaniu, czyli codziennie świeżo wypieczone bagietki w wybranej odsłonie.",
+  "croquesText": "Francuska klasyka w najlepszym wydaniu, czyli codziennie świeżo wypieczone bagietki w wybranej odsłonie.",
+  "appetizersText": "Spróbuj popularne pozycje w oryginalnej wersji lub francuskie przysmaki, których próżno szukać gdzie indziej, bo któż nie skusi się na prawdziwą zupę cebulową bądź domową foie gras?!",
+  "mainDishesText": "Niecodzienne kompozycje francuskiego stylu. Kompletne dania, które zaspokoją głodnych wrażeń śmiałków.",
+  "galettesText": "Bretoński styl w najczystszej postaci, bezglutenowe gryczane naleśniki podane w sposób niespotykany nigdzie indziej w Trójmieście. Oryginał jest tylko jeden - Galette Complète, ale u nas dostępny jest z całą rodzinką. Dobierz galette według swoich ulubionych składników.",
+  "crepesText": "Słodka fantazja znana każdemu bez wyjątku już od dzieciństwa. Podobno te w A la francaise najlepiej smakują o każdej porze dnia. Nasza domowa nutella i domowy słony karmel, często ułatwiają podjęcie tej decyzji. Klasykiem w tej kategorii niezmiennie pozostaje legendarny, przesiąknięty Francją - Crêpe Suzette.",
+  "dessertsText": "Prawdziwe chwile szczęścia to czekolada wypływająca z Fondant, łącząca się z lodami waniliowymi. Lecz niezależnie od wyboru, każdy z naszych deserów zabierze Cię prosto do raju.",
+  "contact": {
+    "header": "Formularz kontaktowy",
+    "firstText": "Zapraszamy do składania rezerwacji online i organizacji imprez okolicznościowych.Zachęcamy również do skorzystania z cateringu.",
+    "secondText": "Jednocześnie zaznaczamy, że każdy wysłany formularz musi zostać potwierdzony poprzez kontakt zwrotny z restauracji.",
+    "address": "Adres",
+    "topic": "temat kontaktu",
+    "reservation": "rezerwacja",
+    "party": "impreza okolicznościowa",
+    "catering": "catering",
+    "onlineOrder": "zamówienie online",
+    "date": "Data",
+    "time": "Godzina",
+    "people": "Ilość osób",
+    "firstName": "Imię",
+    "firstNamePlaceholder": "Wpisz imię",
+    "email": "E-mail",
+    "emailPlaceholder": "Wpisz adres e-mail",
+    "phone": "Telefon",
+    "phonePlaceholder": "Podaj numer telefonu",
+    "description": "Wyrażam zgodę na przetwarzanie danych moich osobowych przez firmę A La Francaise, zgodnie z ustawą o ochronie danych osobowych. Więcej w",
+    "btn": "Wyślij"
+  },
+  "navigation": {
+    "header": {
+      "homepage": "strona główna",
+      "bonjour": "bonjour",
+      "menu": "menu",
+      "specialOffer": "oferta specjalna",
+      "store": "sklep",
+      "contact": "kontakt"
+    },
+    "menu": {
+      "popularDishes": "Najpopularniejsze dania",
+      "breakfast": "Śniadania",
+      "sandwichBaguette": "Kanapki z bagietki",
+      "croques": "Croques",
+      "appetizers": "Przystawki",
+      "mainDishes": "Dania główne",
+      "galettes": "Galettes",
+      "crepes": "Crépes",
+      "desserts": "Desery"
+    },
+    "offers": {
+      "easterOffer": "Oferta wielkanocna",
+      "groupOffer" : "Oferta grupowa",
+      "mayOffer": "Oferta majówkowa"
+    },
+    "information": {
+      "voucher": "voucher podarunkowy",
+      "delivery": "koszt dostawy",
+      "deliveryArea": "obszar dostawy",
+      "statute": "regulamin",
+      "policyPrivacy": "polityka prywatności"
+    }
+  },
+  "homepage": {
+    "hero": {
+      "subTitle": "nasza oferta",
+      "title": "Zestawy degustacyjne oryginalnych francuskich serów",
+      "text": "Zamówicie u nas deski francuskich serów wraz z innymi przekąskami oraz cateringi specjalne.⬇️SKLEP ONLINE⬇️",
+      "btn": "zamów teraz"
+    },
+    "about": {
+      "firstHeader": "Nasze menu",
+      "secondHeader": "O nas",
+      "firstText": "Posiadamy bogatą ofertę śniadań, obiadów i kolacji utrzymanych w duchu oryginalnej kuchni francuskiej, a nasze posiłki dopełniają wspaniałe wina.",
+      "secondText": "Wszystkie kulinarne specjały w A la francaise są dziełem Dominique'a, kucharza z Bretanii. Od dziecka marzył o gotowaniu i pieczeniu dla innych. Zawodu uczył się w szkole gastronomicznej w Dinard, gdzie w 1997 r. otrzymał dyplom BTS. Zanim osiadł w Gdańsku szlifował swój talent w restauracjach Anglii, Irlandii oraz rodzimej Bretanii.",
+      "thirdText": "Współwłaścicielką restauracji jest, pochodząca z Mazur, Joanna. Po ukończeniu Technikum Hotelarskiego w Mrągowie kontynuowała naukę na UJ w Krakowie kończąc ją tytułem magistra Zarządzania w turystce. Sztuki kelnerstwa uczyła się w restauracjach na Mazurach, w Krakowie oraz we Francji.",
+      "btn": "sprawdź menu"
+    },
+    "firstSlogan": "Czego u nas skosztujesz?",
+    "secondSlogan": "Oferta specjalna",
+    "btnCheckAllMenu": "sprawdź pełne menu",
+    "seasonOffer": {
+      "header": "Oferta sezonowa, catering",
+      "subText": "Nieoficjalne spotkanie z przyjaciółmi przy wspólnym Raclette? Czy może elegancka impreza urodzinowa z pysznym tortem Fraisier?",
+      "text": "To od Was zależy, jak i co u nas świętujecie, a od nas Wasze wyśmienite doznania smakowe, w bretońskim klimacie i miłej atmosferze. Domowy wieczór z deską francuskich serów i wędlin lub pełny catering z okazji... i bez okazji, z odbiorem osobistym lub dowozem na terenie Trójmiasta. Okoliczności do tego aby ucztować jest wiele, a ich aranżacja tylko z A la Francaise.",
+      "btn": "sprawdź aktualną ofertę"
+    }
+  },
+  "newsletter": {
+    "header": "Newsletter",
+    "text": "Zapisz się i bądź na bieżąco z naszą ofertą oraz promocjami!",
+    "btn": "ZAPISZ SIĘ",
+    "placeholder": "WPISZ ADRES E-MAIL",
+    "description": "Zapisując się do newslettera zgadzasz się na przetwarzanie Twoich danych osobowych przez firmę A la française i akceptujesz"
+  },
+  "menu": {
+    "frenchBreakfast": {
+      "name": "Śniadanie francuskie",
+      "ingredients": "Croissant, brioche, domowe konfitury, masło solone"
+    },
+    "croqueMadame": {
+      "name": "CROQUE MADAME",
+      "ingredients": "Zapiekana kanapka z szynką, sosem beszamel i serem, do tego jajko sadzone"
+    },
+    "PtitDej": {
+      "name": "Ptit déj à la française",
+      "ingredients": "Brioche, croissant, domowe konfitury i masło solone"
+    },
+    "frenchOmlette": {
+      "name": "Francuski omlet",
+      "ingredients": "Z szynką, szczypiorkiem oraz serem emmental"
+    },
+    "polishBreakfast": {
+      "name": "Śniadanie polskie",
+      "ingredients": "Jajecznica na maśle, twarożek, szynka, ser i pomidor"
+    },
+    "englishBreakfast": {
+      "name": "Śniadanie angielskie",
+      "ingredients": "Jajka sadzone, boczek, kiełbasa, pieczarki, fasolka i pomidor"
+    },
+    "parisianBrunch": {
+      "name": "Paryski brunch",
+      "ingredients": "Ser i wędliny francuskie, jajko sadzone, pomidor, korniszony, domowa konfitura i croissant"
+    },
+    "painPerdu": {
+      "name": "Pain perdu",
+      "ingredients": "Francuski słodki tost z owocami i konfiturą"
+    },
+    "homemadeGranola": {
+      "name": "Domowa granola",
+      "ingredients": "Granola z jogurtem naturalnym i owocami"
+    },
+    "oatmeal": {
+      "name": "Owsianka",
+      "ingredients": "Owsianka z bananem i rodzynkami"
+    },
+    "goat": {
+      "name": "Z kozą",
+      "ingredients": "kozi ser, konfitura z cebuli, pomidory, sałata"
+    },
+    "chicken": {
+      "name": "Z kurczakiem",
+      "ingredients": "Kurczak, boczek, jajko, sos cezar, pomidory, sałata"
+    },
+    "driedFrenchSausage": {
+      "name": "z francuska kiełbasa suszona",
+      "ingredients": "Francuska kiełbasa suszona, topiony ser raclette, korniszony, pomidory, sałata"
+    },
+    "pie": {
+      "name": "Z pasztetem",
+      "ingredients": "Pasztet bretoński, korniszony, pomidory, sałata"
+    },
+    "croqueVege": {
+      "name": "Croque vege",
+      "ingredients": "Zapiekana kanapka z sosem beszamelowym, serem kozim, suszonymi pomidorami, ziołami prowansalskimi i miodem"
+    },
+    "croqueSaumon": {
+      "name": "Croque-Saumon",
+      "ingredients": "Zapiekana kanapka z sosem beszamelowym, łososiem, oliwkami i serem"
+    },
+    "snails": {
+      "name": "Ślimaki po burgundzku",
+      "ingredients": "6 sztuk, z bagietką i masłem czosnkowym"
+    },
+    "tapas": {
+      "name": "Tapas",
+      "ingredients": "Porcja dla 1-2 osób: boczek ze śliwką, grzanki z gęsim rillettes i korniszonem oraz naleśniki z emmental i francuską kiełbasą Rosette"
+    },
+    "frenchCheese": {
+      "name": "Deska francuskich serów",
+      "ingredients": "200g, z bagietką"
+    },
+    "frenchCheeseAndMeat": {
+      "name": "Deska francuskich serów i wędlin",
+      "ingredients": "300g, z bagietką"
+    },
+    "bakedTomatoCream": {
+      "name": "Krem z pieczonych pomidorów",
+      "ingredients": "Pieczone pomidory, pesto bazyliowe i crème fraîche"
+    },
+    "frenchOnionSoup": {
+      "name": "Francuska zupa cebulowa",
+      "ingredients": "z grzankami i serem Cantal"
+    },
+    "raclette": {
+      "name": "Raclette",
+      "ingredients": "Raclette - Stopiony ser alpejski, wędliny, pieczone ziemniaki, bagietka i sałata"
+    },
+    "duckLeg": {
+      "name": "Kacze udko",
+      "ingredients": "Cassoulet czyli fasola pieczona z kaczym udem, kiełbasą i warzywami po francusku"
+    },
+    "cocotteFish": {
+      "name": "Cocotte rybny",
+      "ingredients": "Zapiekanka rybna i mulami po bretońsku, warzywa ze szpinakiem"
+    },
+    "set": {
+      "name": "Komplet",
+      "ingredients": "Szynka, jajko sadzone, ser emmentaler, pomidorki koktajlowe, sos balsamiczny"
+    },
+    "papaj": {
+      "name": "Papaj",
+      "ingredients": "Pieczarki, szpinak, jajko sadzone, ser emmentaler, francuska kiełbasa Rosette lub kozi ser"
+    },
+    "rural": {
+      "name": "Wiejski",
+      "ingredients": "Kaszanka, boczek, jabłko, konfitura z cebuli, sos cydrowy"
+    },
+    "ocean": {
+      "name": "Ocean",
+      "ingredients": "Wędzony łosoś, jajko sadzone, suszone pomidory, szpinak i crème fraiche"
+    },
+    "pancake": {
+      "name": "Naleśnik do wyboru",
+      "ingredients": "masło i cukier / domowa konfitura / miód / domowy słony karmel / domowa nutella"
+    },
+    "pancakeMascarpone": {
+      "name": "Naleśnik z mascarpone",
+      "ingredients": "mascarpone i owoce"
+    },
+    "pancakeBanana": {
+      "name": "Naleśnik z bananem",
+      "ingredients": "Naleśnik z bananem, domową nutellą, bitą śmietaną i gałką lodów"
+    },
+    "crepeSuzette": {
+      "name": "Crépe Suzette",
+      "ingredients": "Maślany naleśnik z pomarańcami, flambirowany likierem Cointreau"
+    },
+    "fondantChocolate": {
+      "name": "Fondant czekoladowy",
+      "ingredients": "Domowe ciasto czekoladowe Fondant, sezonowe owoce, bita śmietana i gałka lodów"
+    },
+    "homemadeChocolateCream": {
+      "name": "Domowy krem brûlée",
+      "ingredients": ""
+    },
+    "traditionalBreton": {
+      "name": "Tradycyne bretoński gryczane naleśniki bezglutenowe",
+      "ingredients": "Naleśniki serwowane z sałatą i domowym sosem winegret"
+    }
+  },
+  "pathname": {
+    "menu": "menu",
+    "specialOffers": "oferty specjalne",
+    "store": "sklep",
+    "contact": "kontakt"
+  },
+  "cart": {
+    "header": "Produkty w koszyku",
+    "description": "Brak produktów w koszyku.",
+    "btn": "Przejdź do sklepu"
+  }
+}

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import Card from '../../components/Card/Card';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
@@ -9,13 +10,14 @@ import { dataSpecialOfferRouterLinks } from '../../utils/dataRouterList';
 import s from './SpecialOffers.module.scss';
 
 function SpecialOffers() {
+  const { t } = useTranslation();
   return (
     <>
       <Header />
       <div className={s.specialOffer}>
         <div>
           <div className={`${s.specialOffer__pathname} my-8`}>
-            A la française - restauracja francuska /&nbsp;
+            {t('homeURL')} /&nbsp;
             <span className="capitalize">{Pathname()}</span>
           </div>
           <MenuRouterList package={dataSpecialOfferRouterLinks} />

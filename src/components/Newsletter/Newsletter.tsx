@@ -1,27 +1,27 @@
+import { useTranslation } from 'react-i18next';
 import NewsletterImage from '../../assets/images/nalesnik.jpg';
 import s from './Newsletter.module.scss';
 
 function Newsletter() {
+  const { t } = useTranslation();
   return (
     <div className={s.newsletter}>
       <div className={s.newsletter__image}>
         <img src={NewsletterImage} alt="nalesnik" />
       </div>
       <div className={s.newsletter__content}>
-        <h3 className={s.newsletter__header}>Newsletter</h3>
+        <h3 className={s.newsletter__header}>{t('newsletter.header')}</h3>
         <div className={s.newsletter__breakLine} />
-        <p className={s.newsletter__text}>
-          Zapisz się i bądź na bieżąco z naszą ofertą oraz promocjami!
-        </p>
+        <p className={s.newsletter__text}>{t('newsletter.text')}</p>
         <div className={s.newsletter__form}>
           <input
             className={s.newsletter__input}
             type="email"
             name="email"
-            placeholder="WPISZ ADRES E-MAIL"
+            placeholder={t('newsletter.placeholder')}
           />
           <button className={s.newsletter__btn} type="button">
-            ZAPISZ SIĘ
+            {t('newsletter.btn')}
           </button>
           <div className={s.newsletter__accept}>
             <input
@@ -30,10 +30,9 @@ function Newsletter() {
               name="privacy_police"
             />
             <p>
-              Zapisując się do newslettera zgadzasz się na przetwarzanie Twoich
-              danych osobowych przez firmę A la française i akceptujesz&nbsp;
+              {t('newsletter.description')}&nbsp;
               <a className={s.newsletter__link} href="/privacy_police">
-                politykę prywatności
+                {t('policy')}
               </a>
               .
             </p>

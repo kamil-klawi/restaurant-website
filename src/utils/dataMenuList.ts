@@ -1,268 +1,277 @@
+import i18next from 'i18next';
 import { MenuItemProps } from '../types/MenuItemProps';
+import '../locales/i18n';
 
 export const dataPopularDishes: MenuItemProps[] = [
   {
-    name: 'Śniadanie francuskie',
-    ingredients: 'Croissant, brioche, domowe konfitury, masło solone',
+    name: i18next.t('menu.frenchBreakfast.name'),
+    ingredients: i18next.t('menu.frenchBreakfast.ingredients'),
     price: '26',
   },
   {
-    name: 'CROQUE MADAME',
-    ingredients:
-      'Zapiekana kanapka z szynką, sosem beszamel i serem, do tego jajko sadzone',
+    name: i18next.t('menu.croqueMadame.name'),
+    ingredients: i18next.t('menu.croqueMadame.ingredients'),
     price: '34',
   },
 ];
 
 export const dataBreakfast: MenuItemProps[] = [
   {
-    name: 'Ptit déj à la française',
-    ingredients: 'Brioche, croissant, domowe konfitury i masło solone',
+    name: i18next.t('menu.PtitDej.name'),
+    ingredients: i18next.t('menu.PtitDej.ingredients'),
     price: '26',
   },
   {
-    name: 'Francuski omlet',
-    ingredients: 'Z szynką, szczypiorkiem oraz serem emmental',
+    name: i18next.t('menu.frenchOmlette.name'),
+    ingredients: i18next.t('menu.frenchOmlette.ingredients'),
     price: '26',
   },
   {
-    name: 'Śniadanie polskie',
-    ingredients: 'Jajecznica na maśle, twarożek, szynka, ser i pomidor',
+    name: i18next.t('menu.polishBreakfast.name'),
+    ingredients: i18next.t('menu.polishBreakfast.ingredients'),
     price: '30',
   },
   {
-    name: 'Śniadanie angielskie',
-    ingredients:
-      'Jajka sadzone, boczek, kiełbasa, pieczarki, fasolka i pomidor',
+    name: i18next.t('menu.englishBreakfast.name'),
+    ingredients: i18next.t('menu.englishBreakfast.ingredients'),
     price: '36',
   },
   {
-    name: 'Paryski brunch',
-    ingredients:
-      'Ser i wędliny francuskie, jajko sadzone, pomidor, korniszony, domowa konfitura i croissant',
+    name: i18next.t('menu.parisianBrunch.name'),
+    ingredients: i18next.t('menu.parisianBrunch.ingredients'),
     price: '49',
   },
   {
-    name: 'Pain perdu',
-    ingredients: 'Francuski słodki tost z owocami i konfiturą',
+    name: i18next.t('menu.painPerdu.name'),
+    ingredients: i18next.t('menu.painPerdu.ingredients'),
     price: '26',
   },
   {
-    name: 'Domowa granola',
-    ingredients: 'Granola z jogurtem naturalnym i owocami',
+    name: i18next.t('menu.homemadeGranola.name'),
+    ingredients: i18next.t('menu.homemadeGranola.ingredients'),
     price: '26',
   },
   {
-    name: 'Owsianka',
-    ingredients: '    Owsianka z bananem i rodzynkami',
+    name: i18next.t('menu.oatmeal.name'),
+    ingredients: i18next.t('menu.oatmeal.ingredients'),
     price: '24',
   },
 ];
 
 export const dataSandwichBaguette: MenuItemProps[] = [
   {
-    name: 'Z kozą',
-    ingredients: 'kozi ser, konfitura z cebuli, pomidory, sałata',
+    name: i18next.t('menu.goat.name'),
+    ingredients: i18next.t('menu.goat.ingredients'),
     price: '26',
   },
   {
-    name: 'Z kurczakiem',
-    ingredients: 'Kurczak, boczek, jajko, sos cezar, pomidory, sałata',
+    name: i18next.t('menu.chicken.name'),
+    ingredients: i18next.t('menu.chicken.ingredients'),
     price: '28',
   },
   {
-    name: 'z francuska kiełbasa suszona',
-    ingredients:
-      'Francuska kiełbasa suszona, topiony ser raclette, korniszony, pomidory, sałata',
+    name: i18next.t('menu.driedFrenchSausage.name'),
+    ingredients: i18next.t('menu.driedFrenchSausage.ingredients'),
     price: '36',
   },
   {
-    name: 'Z pasztetem',
-    ingredients: 'Pasztet bretoński, korniszony, pomidory, sałata',
+    name: i18next.t('menu.pie.name'),
+    ingredients: i18next.t('menu.pie.ingredients'),
     price: '27',
   },
 ];
 
 export const dataCroques: MenuItemProps[] = [
   {
-    name: 'Croque-madame',
-    ingredients:
-      'Zapiekana kanapka z sosem beszamelowym, szynką i serem, jajko sadzone',
+    name: i18next.t('menu.croqueMadame.name'),
+    ingredients: i18next.t('menu.croqueMadame.ingredients'),
     price: '34',
   },
   {
-    name: 'Croque vege',
-    ingredients:
-      'Zapiekana kanapka z sosem beszamelowym, serem kozim, suszonymi pomidorami, ziołami prowansalskimi i miodem',
+    name: i18next.t('menu.croqueVege.name'),
+    ingredients: i18next.t('menu.croqueVege.ingredients'),
     price: '35',
   },
   {
-    name: 'Croque-Saumon',
-    ingredients:
-      'Zapiekana kanapka z sosem beszamelowym, łososiem, oliwkami i serem',
+    name: i18next.t('menu.croqueSaumon.name'),
+    ingredients: i18next.t('menu.croqueSaumon.ingredients'),
     price: '36',
   },
 ];
 
 export const dataAppetizers: MenuItemProps[] = [
   {
-    name: 'Ślimaki po burgundzku',
-    ingredients: '6 sztuk, z bagietką i masłem czosnkowym',
+    name: i18next.t('menu.snails.name'),
+    ingredients: i18next.t('menu.snails.ingredients'),
     price: '38',
   },
   {
-    name: 'Tapas',
-    ingredients:
-      'Porcja dla 1-2 osób: boczek ze śliwką, grzanki z gęsim rillettes i korniszonem oraz naleśniki z emmental i francuską kiełbasą Rosette',
+    name: i18next.t('menu.tapas.name'),
+    ingredients: i18next.t('menu.tapas.ingredients'),
     price: '37',
   },
   {
-    name: 'Deska francuskich serów',
-    ingredients: '200g, z bagietką',
+    name: i18next.t('menu.frenchCheese.name'),
+    ingredients: i18next.t('menu.frenchCheese.ingredients'),
     price: '40',
   },
   {
-    name: 'Deska francuskich serów i wędlin',
-    ingredients: '300g, z bagietką',
+    name: i18next.t('menu.frenchCheeseAndMeat.name'),
+    ingredients: i18next.t('menu.frenchCheeseAndMeat.ingredients'),
     price: '49',
   },
   {
-    name: 'Krem z pieczonych pomidorów',
-    ingredients: 'Pieczone pomidory, pesto bazyliowe i crème fraîche',
+    name: i18next.t('menu.bakedTomatoCream.name'),
+    ingredients: i18next.t('menu.bakedTomatoCream.ingredients'),
     price: '21',
   },
   {
-    name: 'Francuska zupa cebulowa',
-    ingredients: 'z grzankami i serem Cantal',
+    name: i18next.t('menu.frenchOnionSoup.name'),
+    ingredients: i18next.t('menu.frenchOnionSoup.ingredients'),
     price: '25',
   },
 ];
 
 export const dataMainDishes: MenuItemProps[] = [
   {
-    name: 'Raclette',
-    ingredients:
-      'Raclette - Stopiony ser alpejski, wędliny, pieczone ziemniaki, bagietka i sałata',
+    name: i18next.t('menu.raclette.name'),
+    ingredients: i18next.t('menu.raclette.ingredients'),
     price: '51',
   },
   {
-    name: 'Kacze udko',
-    ingredients:
-      'Cassoulet czyli fasola pieczona z kaczym udem, kiełbasą i warzywami po francusku',
+    name: i18next.t('menu.frenduckLegchOnionSoup.name'),
+    ingredients: i18next.t('menu.duckLeg.ingredients'),
     price: '55',
   },
   {
-    name: 'Cocotte rybny',
-    ingredients:
-      'Zapiekanka rybna i mulami po bretońsku, warzywa ze szpinakiem',
+    name: i18next.t('menu.cocotteFish.name'),
+    ingredients: i18next.t('menu.cocotteFish.ingredients'),
     price: '50',
   },
 ];
 
 export const dataGalettes: MenuItemProps[] = [
   {
-    name: 'Komplet',
-    ingredients:
-      'Szynka, jajko sadzone, ser emmentaler, pomidorki koktajlowe, sos balsamiczny',
+    name: i18next.t('menu.set.name'),
+    ingredients: i18next.t('menu.set.ingredients'),
     price: '35',
   },
   {
-    name: 'Papaj',
-    ingredients:
-      'Pieczarki, szpinak, jajko sadzone, ser emmentaler, francuska kiełbasa Rosette lub kozi ser',
+    name: i18next.t('menu.papaj.name'),
+    ingredients: i18next.t('menu.papaj.ingredients'),
     price: '37',
   },
   {
-    name: 'Wiejski',
-    ingredients: 'Kaszanka, boczek, jabłko, konfitura z cebuli, sos cydrowy',
+    name: i18next.t('menu.rural.name'),
+    ingredients: i18next.t('menu.rural.ingredients'),
     price: '36',
   },
   {
-    name: 'Ocean',
-    ingredients:
-      'Wędzony łosoś, jajko sadzone, suszone pomidory, szpinak i crème fraiche',
+    name: i18next.t('menu.ocean.name'),
+    ingredients: i18next.t('menu.ocean.ingredients'),
     price: '39',
   },
 ];
 
 export const dataCrepes: MenuItemProps[] = [
   {
-    name: 'Naleśnik do wyboru',
-    ingredients:
-      'masło i cukier / domowa konfitura / miód / domowy słony karmel / domowa nutella',
+    name: i18next.t('menu.pancake.name'),
+    ingredients: i18next.t('menu.pancake.ingredients'),
     price: '18',
   },
   {
-    name: 'Naleśnik z mascarpone',
-    ingredients: 'mascarpone i owoce',
+    name: i18next.t('menu.pancakeMascarpone.name'),
+    ingredients: i18next.t('menu.pancakeMascarpone.ingredients'),
     price: '28',
   },
   {
-    name: 'Naleśnik z bananem',
-    ingredients:
-      'Naleśnik z bananem, domową nutellą, bitą śmietaną i gałką lodów',
+    name: i18next.t('menu.pancakeBanana.name'),
+    ingredients: i18next.t('menu.pancakeBanana.ingredients'),
     price: '28',
   },
   {
-    name: 'Crépe Suzette',
-    ingredients:
-      'Maślany naleśnik z pomarańcami, flambirowany likierem Cointreau',
+    name: i18next.t('menu.crepeSuzette.name'),
+    ingredients: i18next.t('menu.crepeSuzette.ingredients'),
     price: '34',
   },
 ];
 
 export const dataDesserts: MenuItemProps[] = [
   {
-    name: 'Fondant czekoladowy',
-    ingredients:
-      'Domowe ciasto czekoladowe Fondant, sezonowe owoce, bita śmietana i gałka lodów',
+    name: i18next.t('menu.fondantChocolate.name'),
+    ingredients: i18next.t('menu.fondantChocolate.ingredients'),
     price: '25',
   },
   {
-    name: 'Domowy krem brûlée',
-    ingredients: '',
+    name: i18next.t('menu.homemadeChocolateCream.name'),
+    ingredients: i18next.t('menu.homemadeChocolateCream.ingredients'),
     price: '21',
   },
 ];
 
 export const dataEasterOffer: MenuItemProps[] = [
   {
-    name: 'Śniadanie francuskie',
-    ingredients: 'Croissant, brioche, domowe konfitury, masło solone',
+    name: i18next.t('menu.frenchBreakfast.name'),
+    ingredients: i18next.t('menu.frenchBreakfast.ingredients'),
     price: '26',
   },
   {
-    name: 'Croque-madame',
-    ingredients:
-      'Zapiekana kanapka z sosem beszamelowym, szynką i serem, jajko sadzone',
+    name: i18next.t('menu.croqueMadame.name'),
+    ingredients: i18next.t('menu.croqueMadame.ingredients'),
     price: '34',
   },
 ];
 
 export const dataGroupOffer: MenuItemProps[] = [
   {
-    name: 'Śniadanie francuskie',
-    ingredients: 'Croissant, brioche, domowe konfitury, masło solone',
+    name: i18next.t('menu.frenchBreakfast.name'),
+    ingredients: i18next.t('menu.frenchBreakfast.ingredients'),
     price: '26',
   },
   {
-    name: 'Croque-madame',
-    ingredients:
-      'Zapiekana kanapka z sosem beszamelowym, szynką i serem, jajko sadzone',
+    name: i18next.t('menu.croqueMadame.name'),
+    ingredients: i18next.t('menu.croqueMadame.ingredients'),
     price: '34',
   },
 ];
 
 export const dataMayOffer: MenuItemProps[] = [
   {
-    name: 'Śniadanie francuskie',
-    ingredients: 'Croissant, brioche, domowe konfitury, masło solone',
+    name: i18next.t('menu.frenchBreakfast.name'),
+    ingredients: i18next.t('menu.frenchBreakfast.ingredients'),
     price: '26',
   },
   {
-    name: 'Croque-madame',
-    ingredients:
-      'Zapiekana kanapka z sosem beszamelowym, szynką i serem, jajko sadzone',
+    name: i18next.t('menu.croqueMadame.name'),
+    ingredients: i18next.t('menu.croqueMadame.ingredients'),
     price: '34',
+  },
+];
+
+export const dataHomePopular: MenuItemProps[] = [
+  {
+    name: i18next.t('menu.frenchBreakfast.name'),
+    ingredients: i18next.t('menu.frenchBreakfast.ingredients'),
+    price: '26',
+  },
+  {
+    name: i18next.t('menu.croqueMadame.name'),
+    ingredients: i18next.t('menu.croqueMadame.ingredients'),
+    price: '34',
+  },
+  {
+    name: i18next.t('menu.frenchOnionSoup.name'),
+    ingredients: i18next.t('menu.frenchOnionSoup.ingredients'),
+    price: '25',
+  },
+  {
+    name: i18next.t('menu.parisianBrunch.name'),
+    ingredients: i18next.t('menu.parisianBrunch.ingredients'),
+    price: '49',
+  },
+  {
+    name: i18next.t('menu.traditionalBreton.name'),
+    ingredients: i18next.t('menu.traditionalBreton.ingredients'),
+    price: 'od 35',
   },
 ];

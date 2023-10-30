@@ -1,13 +1,16 @@
+import { useTranslation } from 'react-i18next';
+
 export function Pathname() {
+  const { t } = useTranslation();
   const path = window.location.pathname.replace('/', '');
   switch (path) {
     case 'menu':
-      return 'menu';
+      return t('pathname.menu');
     case 'special_offers':
-      return 'oferty specjalne';
+      return t('pathname.specialOffers');
     case 'store':
-      return 'sklep';
+      return t('pathname.store');
     case 'contact':
-      return 'kontakt';
+      return t('pathname.contact');
   }
 }
