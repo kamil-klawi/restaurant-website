@@ -1,0 +1,110 @@
+$color-blue: #0093DD;
+$color-black: #000000;
+$color-gray: #0000001A;
+$color-white: #ffffff;
+
+.modal {
+  border-radius: 1rem;
+  padding: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  position: absolute;
+  width: 50%;
+  margin: auto;
+  background: $color-white;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+
+  .modal__wrapper {
+    .modal__closeButton {
+      float: right;
+      color: $color-black;
+      font-size: 1.75rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      padding: 0.25rem 1rem;
+      border-radius: 2rem;
+      background-color: $color-gray;
+    }
+
+    .modal__content {
+      padding: 4rem 0;
+
+      .modal__title {
+        padding-bottom: 2rem;
+        color: $color-black;
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.8px;
+        text-decoration: none;
+        text-transform: capitalize;
+        border-bottom: 0.15rem solid $color-gray;
+      }
+
+      .modal__body {
+        padding-top: 2rem;
+        color: $color-black;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.8px;
+        text-decoration: none;
+      }
+    }
+
+    .modal__form {
+      display: flex;
+      flex-direction: column;
+
+      .modal__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ::first-letter {
+          text-transform: uppercase;
+        }
+
+        .modal__label {
+          color: $color-black;
+          font-size: 1rem;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 600;
+          letter-spacing: 0.8px;
+          text-decoration: none;
+        }
+
+        .modal__price {
+          color: $color-blue;
+          font-size: 1rem;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 300;
+          letter-spacing: 0.8px;
+          text-decoration: none;
+        }
+      }
+
+      .modal__btn {
+        float: right;
+        display: inline-flex;
+        position: relative;
+        padding: 1rem 2rem;
+        margin: 2rem 0 0 2rem;
+        color: $color-black;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: $color-blue;
+
+        &:first-child {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

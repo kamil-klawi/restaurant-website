@@ -7,6 +7,7 @@
   },
   "navigate": "nawigacja",
   "info": "informacje",
+  "cont": "kontakt",
   "copyright": "Copyright © A La Francaise 2021",
   "createBy": "Realizacje IMSET.IT",
   "policy": "politykę prywatności",
@@ -65,6 +66,15 @@
       "easterOffer": "Oferta wielkanocna",
       "groupOffer" : "Oferta grupowa",
       "mayOffer": "Oferta majówkowa"
+    },
+    "store": {
+      "cheeses": "sery",
+      "cold_cuts": "wędliny",
+      "deli": "delikatesy",
+      "alcohols": "alkohole",
+      "catering": "catering",
+      "new": "nowości",
+      "sales": "promocje"
     },
     "information": {
       "voucher": "voucher podarunkowy",
@@ -258,9 +268,21 @@
     "store": "sklep",
     "contact": "kontakt"
   },
+  "store": {
+    "category": "kategoria",
+    "cheeses": "sery",
+    "description": "Najwyższej jakości wyroby importowane z Francji, wytwarzane według surowo strzerzonych receptur. Certyfikacja AOC gwarantuje oryginalny, pełny smak każdego rodzaju sprzedawanych serów. Najlepiej smakują z naszą domową konfiturą, miodem, winogronami i orzechami."
+  },
   "cart": {
     "header": "Produkty w koszyku",
     "description": "Brak produktów w koszyku.",
     "btn": "Przejdź do sklepu"
+  },
+  "modal": {
+    "buyNow": "kup teraz",
+    "addToCart": "dodaj do koszyka",
+    "price": "cena",
+    "amount": "ilość",
+    "weightToChoose": "waga do wyboru"
   }
 }

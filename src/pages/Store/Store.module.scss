@@ -1,0 +1,102 @@
+$color-black: #000000;
+$color-gray: #0000001A;
+$color-blue: #0093DD;
+
+.store__wrapper {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+
+  .store__category {
+    padding: 0 8rem;
+    width: 30%;
+
+    .category__header {
+      color: $color-black;
+      font-size: 2rem;
+      font-weight: 300;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .category__breakline {
+      margin: 1rem 0;
+      width: 4rem;
+      height: 0.2rem;
+      background-color: $color-blue;
+    }
+
+    .category__list {
+      list-style-type: none;
+      list-style: none;
+
+      .category__item {
+        padding: 1.5rem 0;
+        border-bottom: 0.15rem solid $color-gray;
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
+
+        .category__link {
+          color: $color-black;
+          font-size: 1rem;
+          font-weight: 300;
+          letter-spacing: 0.8px;
+          text-decoration: none;
+          opacity: 1;
+
+          &_active {
+            font-weight: 600;
+            color: $color-blue;
+          }
+        }
+      }
+    }
+  }
+
+  .store__list {
+    padding-right: 6rem;
+    width: 70%;
+
+    .store__content {
+      margin-bottom: 4rem;
+
+      .store__pathname {
+        color: $color-black;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.8px;
+        text-decoration: none;
+        opacity: 0.45;
+      }
+  
+      .list__header {
+        color: $color-black;
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 0.8px;
+        
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+  
+      .list__breakline {
+        margin: 2rem 0;
+        width: 4rem;
+        height: 0.2rem;
+        background-color: $color-blue;
+      }
+  
+      .list__description {
+        color: $color-black;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 0.8px;
+      }
+    }
+  }
+}

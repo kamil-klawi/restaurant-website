@@ -1,0 +1,46 @@
+$color-blue: #0093DD;
+$color-black: #000000;
+$color-gray: #0000001A;
+$color-white: #ffffff;
+
+.card {
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding: 2rem;
+  width: 32%;
+  display: block;
+  position: relative;
+  background-color: $color-white;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+
+  .card__header {
+    margin: 0 auto;
+    color: $color-black;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  .card__body {
+    margin: 2rem auto;
+    color: $color-blue;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
+
+  .card__button {
+    margin: 0 auto;
+    color: $color-black;
+    background-color: $color-blue;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

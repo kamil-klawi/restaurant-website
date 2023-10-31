@@ -2,11 +2,15 @@ import { changeLanguage } from 'i18next';
 import { useTranslation } from 'react-i18next';
 import alafrancaiseLogo from '../../assets/images/a_la_francaise_logo.png';
 import s from './Header.module.scss';
+import { useStore } from '../../store/useStore';
 
 function Header() {
+  const amount = useStore((state) => state.amount);
+
   const handleLanguage = (language: string) => {
     changeLanguage(language);
   };
+
   return (
     <header className={s.header}>
       <nav className={s.nav}>
@@ -33,6 +37,8 @@ function Header() {
         </div>
         <a href="/cart" className={s.nav__cart}>
           <CartIcon />
+          &nbsp;
+          <span className="font-bold">{amount}</span>
         </a>
       </nav>
     </header>
@@ -40,31 +46,55 @@ function Header() {
 }
 
 function MenuList() {
+  const path = window.location.pathname.replace('/', '');
   const { t } = useTranslation();
   return (
     <ul className={s.nav__list}>
       <li className={s.nav__item}>
-        <a href="/" className={`${s.nav__link} ${s.nav__link_active}`}>
+        <a
+          href="/"
+          className={`${s.nav__link} ${path == '' ? s.nav__link_active : ''}`}
+        >
           {t('navigation.header.bonjour')}
         </a>
       </li>
       <li className={s.nav__item}>
-        <a href="/menu" className={s.nav__link}>
+        <a
+          href="/menu"
+          className={`${s.nav__link} ${
+            path == 'menu' ? s.nav__link_active : ''
+          }`}
+        >
           {t('navigation.header.menu')}
         </a>
       </li>
       <li className={s.nav__item}>
-        <a href="/special_offers" className={s.nav__link}>
+        <a
+          href="/special_offers"
+          className={`${s.nav__link} ${
+            path == 'special_offers' ? s.nav__link_active : ''
+          }`}
+        >
           {t('navigation.header.specialOffer')}
         </a>
       </li>
       <li className={s.nav__item}>
-        <a href="/store" className={s.nav__link}>
+        <a
+          href="/store"
+          className={`${s.nav__link} ${
+            path == 'store' ? s.nav__link_active : ''
+          }`}
+        >
           {t('navigation.header.store')}
         </a>
       </li>
       <li className={s.nav__item}>
-        <a href="/contact" className={s.nav__link}>
+        <a
+          href="/contact"
+          className={`${s.nav__link} ${
+            path == 'contact' ? s.nav__link_active : ''
+          }`}
+        >
           {t('navigation.header.contact')}
         </a>
       </li>

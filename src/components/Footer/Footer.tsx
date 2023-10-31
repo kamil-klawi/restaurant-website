@@ -31,7 +31,7 @@ function Footer() {
               </ul>
             </div>
             <div className={s.footer__section}>
-              <h4>informacje</h4>
+              <h4>{t('info')}</h4>
               <ul>
                 <li>
                   <a href="/voucher">{t('navigation.information.voucher')}</a>
@@ -55,7 +55,7 @@ function Footer() {
               </ul>
             </div>
             <div className={s.footer__section}>
-              <h4>kontakt</h4>
+              <h4>{t('cont')}</h4>
               <ul>
                 <li>
                   <h5>{t('contact.address')}:</h5>
