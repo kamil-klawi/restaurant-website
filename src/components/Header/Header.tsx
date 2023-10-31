@@ -9,6 +9,7 @@ function Header() {
 
   const handleLanguage = (language: string) => {
     changeLanguage(language);
+    localStorage.setItem('lang', language);
   };
 
   return (

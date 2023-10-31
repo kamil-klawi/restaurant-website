@@ -5,7 +5,7 @@ import pl from './pl.json';
 import en from './en.json';
 
 i18next.use(initReactI18next).init({
-  fallbackLng: 'pl',
+  fallbackLng: localStorage.getItem('lang') || 'pl',
   resources: {
     pl: {
       translation: pl,
