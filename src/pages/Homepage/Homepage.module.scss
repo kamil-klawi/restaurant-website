@@ -28,6 +28,18 @@ $color-white: #ffffff;
     letter-spacing: 0.8px;
     text-decoration: none;
 
+    @media screen and (min-width: 650px) and (max-width: 1024px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (min-width: 560px) and (max-width: 650px) {
+      font-size: 2.5rem;
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 560px) {
+      font-size: 2rem;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -38,6 +50,24 @@ $color-white: #ffffff;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+
+      @media screen and (min-width: 650px) and (max-width: 1024px) {
+        width: 2.2rem;
+        height: 4.4rem;
+        margin: 0 0 0 -4rem;
+      }
+
+      @media screen and (min-width: 560px) and (max-width: 650px) {
+        width: 1.8rem;
+        height: 3.6rem;
+        margin: 0 0 0 -3rem;
+      }
+
+      @media screen and (min-width: 0px) and (max-width: 560px) {
+        width: 1.2rem;
+        height: 2.4rem;
+        margin: 0.25rem 0 0 -1.75rem;
+      }
     }
 
     &::after {
@@ -51,6 +81,24 @@ $color-white: #ffffff;
       background-size: cover;
       background-repeat: no-repeat;
       transform: rotate(180deg);
+
+      @media screen and (min-width: 650px) and (max-width: 1024px) {
+        width: 2.2rem;
+        height: 4.4rem;
+        margin: 0.25rem 0 0 2rem;
+      }
+
+      @media screen and (min-width: 560px) and (max-width: 650px) {
+        width: 1.8rem;
+        height: 3.6rem;
+        margin: 0.25rem 0 0 1rem;
+      }
+
+      @media screen and (min-width: 0px) and (max-width: 560px) {
+        width: 1.2rem;
+        height: 2.4rem;
+        margin: 0.45rem 0 0 0.5rem;
+      }
     }
   }
 }

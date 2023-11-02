@@ -32,7 +32,7 @@ function SwipSlide() {
     <>
       <div className={s.slide__content}>
         <h3
-          className={`${s.slide__subheader} text-md font-bold text-white uppercase`}
+          className={`${s.slide__subheader} text-md font-bold text-white uppercase sm:text-sm`}
         >
           {t('homepage.hero.subTitle')}
         </h3>

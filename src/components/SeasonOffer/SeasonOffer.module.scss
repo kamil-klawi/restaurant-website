@@ -20,6 +20,51 @@ $color-white: #ffffff;
   background-color: transparent;
   transform: translate(0, -40%);
 
+  @media screen and (min-width: 1440px) and (max-width: 1600px) {
+    transform: translate(0, -35%);
+  }
+  
+  @media screen and (min-width: 1280px) and (max-width: 1440px) {
+    transform: translate(0, -30%);
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    transform: translate(0, -25%);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    transform: translate(0, -20%);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'image1'
+    'article'
+    'article'
+    'image2'
+    'image3';
+  }
+
+  @media screen and (min-width: 560px) and (max-width: 768px) {
+    transform: translate(0, -12.5%);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'image1'
+    'article'
+    'article'
+    'image2'
+    'image3';
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 560px) {
+    transform: translate(0, -10%);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'image1'
+    'article'
+    'article'
+    'image2'
+    'image3';
+  }
+
   .seasonOffer__image {
     border-bottom: 0.25rem solid $color-blue;
     box-shadow: 0 0 4rem rgba(0, 0, 0, 0.15);
@@ -51,6 +96,10 @@ $color-white: #ffffff;
     border-bottom: 0.25rem solid $color-blue;
     background-color: $color-white;
     box-shadow: 0 0 4rem rgba(0, 0, 0, 0.15);
+
+    @media screen and (min-width: 0px) and (max-width: 1024px) {
+      padding: 2rem;
+    }
 
     .seasonOffer__header {
       color: $color-black;
@@ -87,6 +136,10 @@ $color-white: #ffffff;
       text-decoration: none;
       text-transform: uppercase;
       background-color: $color-blue;
+
+      @media screen and (min-width: 0px) and (max-width: 560px) {
+        padding: 0.5rem;
+      }
     }
   }
 }
