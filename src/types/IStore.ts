@@ -2,7 +2,6 @@ import { IProduct } from './IProduct';
 
 export interface IStore {
   store: IProduct[];
-  amount: number;
   cartItems: IProduct[];
   addProduct: (
     title: string,

@@ -13,7 +13,7 @@ function Modal(props: ModalProps) {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault;
-    addProduct(props.title, props.body);
+    addProduct(props.title, props.body, props.price, props.weight);
   };
 
   return (

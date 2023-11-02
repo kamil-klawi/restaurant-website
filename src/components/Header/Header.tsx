@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 function Header() {
   const [isOpen, setOpen] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 1350);
-  const amount = useStore((state) => state.amount);
+  const cartItems = useStore((state) => state.cartItems);
 
   useEffect(() => {
     setIsMobile(window.innerWidth < 1350);
@@ -63,7 +63,7 @@ function Header() {
         <a href="/cart" className={s.nav__cart}>
           <CartIcon />
           &nbsp;
-          <span className="font-bold">{amount}</span>
+          <span className="font-bold">{cartItems.length}</span>
         </a>
       </nav>
     </header>

@@ -4,3 +4,5 @@ export interface IProduct {
   price: string;
   weight: string;
 }
+
+export type TCart = Omit<IProduct, 'body'>;

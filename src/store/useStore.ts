@@ -26,7 +26,6 @@ export const useStore = create<IStore>()(
           weight: '500g',
         },
       ],
-      amount: 3,
       cartItems: [],
       addProduct: (
         title: string,
@@ -35,22 +34,18 @@ export const useStore = create<IStore>()(
         weight: string,
       ) =>
         set((state: IStore) => ({
-          store: [
-            ...state.store,
+          cartItems: [
+            ...state.cartItems,
             { title: title, body: body, price: price, weight: weight },
           ],
-          // cartItems: [
-          //   ...state.cartItems,
-          //   { title: title, body: body, price: price, weight: weight },
-          // ],
         })),
       removeProduct: (title: string) =>
         set((state: IStore) => ({
-          store: state.store.filter(
+          cartItems: state.cartItems.filter(
             (product: IProduct) => product.title !== title,
           ),
         })),
-      removeAllProducts: () => set({ store: [] }),
+      removeAllProducts: () => set({ cartItems: [] }),
     }),
     {
       name: 'store-storage',

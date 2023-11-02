@@ -1,0 +1,62 @@
+$color-black: #000000;
+$color-gray: #0000001A;
+$color-white: #ffffff;
+$color-blue: #0093DD;
+
+.product {
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.15rem solid $color-gray;
+
+  .product__btn {
+    color: $color-white;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    padding: 0.15rem 1rem;
+    background-color: $color-blue;
+    border-radius: 2rem;
+  }
+
+  .product__content {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .product__title {
+      color: $color-black;
+      font-size: 2rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.8px;
+      text-decoration: none;
+    }
+    .product__weight {
+      opacity: 0.65;
+      color: $color-black;
+      font-size: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.8px;
+      text-decoration: none;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .product__price {
+    color: $color-black;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+  }
+}
