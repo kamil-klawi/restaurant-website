@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage/Homepage';
 import Menu from './pages/Menu/Menu';
 import SpecialOffers from './pages/SpecialOffers/SpecialOffers';
 import Store from './pages/Store/Store';
+import Error from './pages/Error/Error';
 
 export const router = createBrowserRouter([
   {
@@ -33,6 +34,6 @@ export const router = createBrowserRouter([
   },
   {
     path: '*',
-    element: <h1>Error 404! Page not found!</h1>,
+    element: <Error />,
   },
 ]);

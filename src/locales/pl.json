@@ -1,4 +1,7 @@
 {
+  "errorHeader": "Błąd 404! Nie znaleziono strony",
+  "errorDescription": "Niestety strony, której szukasz nie istnieje lub została usunięta.",
+  "backToHomepage": "wróć na stronę główną",
   "homeURL": "A la française - restauracja francuska",
   "invalid": {
     "required": "Wymagane pole",

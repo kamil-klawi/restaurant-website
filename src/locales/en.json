@@ -1,4 +1,7 @@
 {
+  "errorHeader": "Error 404! Page not found",
+  "errorDescription": "Unfortunately, the page you are looking for does not exist or has been deleted.",
+  "backToHomepage": "back to homepage",
   "homeURL": "A la française - French restaurant",
   "invalid": {
     "required": "Required field",
