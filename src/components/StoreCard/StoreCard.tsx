@@ -8,7 +8,7 @@ function StoreCard(props: StoreCardProps) {
   return (
     <div className={s.card}>
       <h2 className={s.card__header}>{props.title}</h2>
-      <p className={s.card__body}>{props.body}</p>
+      <p className={s.card__body}>{props.price}zł</p>
       <button className={s.card__button} onClick={() => props.openModal(true)}>
         {t('modal.addToCart')}
       </button>

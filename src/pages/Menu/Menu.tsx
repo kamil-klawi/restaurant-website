@@ -16,7 +16,7 @@ import { useTranslation } from 'react-i18next';
 
 function Menu() {
   const { t } = useTranslation();
-  useDocumentTitle('Menu');
+  useDocumentTitle(`${t('navigation.header.menu').toUpperCase()}`);
 
   return (
     <>
@@ -30,8 +30,9 @@ function Menu() {
           <MenuRouterList package={dataMenuRouterLinks} />
         </div>
         {dataCardMenu &&
-          dataCardMenu.map((dish) => (
+          dataCardMenu.map((dish, index) => (
             <Card
+              key={index}
               package={dish.package}
               id={dish.id}
               title={dish.title}

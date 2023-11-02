@@ -13,11 +13,13 @@ import { Pathname } from '../../utils/Pathname';
 
 // styles
 import s from './Store.module.scss';
+import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 
 function Store() {
   const store = useStore((state) => state.store);
   const [openModal, setOpenModal] = useState<boolean>(false);
   const { t } = useTranslation();
+  useDocumentTitle(`${t('navigation.header.store').toUpperCase()}`);
   return (
     <div>
       <Header />
@@ -39,10 +41,11 @@ function Store() {
           </div>
           <div className="flex flex-wrap">
             {store &&
-              store.map((prodcut) => (
+              store.map((product, index) => (
                 <StoreCard
-                  title={prodcut.title}
-                  body={prodcut.body}
+                  key={index}
+                  title={product.title}
+                  price={product.price}
                   openModal={setOpenModal}
                 />
               ))}
@@ -50,12 +53,13 @@ function Store() {
         </div>
       </div>
       {openModal &&
-        store.map((prodcut) => (
+        store.map((product, index) => (
           <Modal
-            title={prodcut.title}
-            body={prodcut.body}
-            weight="100g"
-            price="59.99"
+            key={index}
+            title={product.title}
+            body={product.body}
+            weight={product.weight}
+            price={product.price}
             closeModal={setOpenModal}
           />
         ))}

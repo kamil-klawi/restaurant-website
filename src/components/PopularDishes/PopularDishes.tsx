@@ -13,8 +13,9 @@ function PopularDishes() {
       <div className={s.popularDishes__breakline} />
       <div className={s.popularDishes__list}>
         {dataHomePopular &&
-          dataHomePopular.map((dish) => (
+          dataHomePopular.map((dish, index) => (
             <MenuItem
+              key={index}
               price={dish.price}
               name={dish.name}
               ingredients={dish.ingredients}

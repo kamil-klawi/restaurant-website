@@ -3,9 +3,20 @@ import { useTranslation } from 'react-i18next';
 import alafrancaiseLogo from '../../assets/images/a_la_francaise_logo.png';
 import s from './Header.module.scss';
 import { useStore } from '../../store/useStore';
+import { useEffect, useState } from 'react';
 
 function Header() {
+  const [isOpen, setOpen] = useState<boolean>(false);
+  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 1350);
   const amount = useStore((state) => state.amount);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 1350);
+  }, []);
+
+  const handleHamurger = () => {
+    setOpen(!isOpen);
+  };
 
   const handleLanguage = (language: string) => {
     changeLanguage(language);
@@ -36,6 +47,19 @@ function Header() {
             pl
           </button>
         </div>
+        {isMobile && (
+          <button onClick={handleHamurger}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+            </svg>
+          </button>
+        )}
         <a href="/cart" className={s.nav__cart}>
           <CartIcon />
           &nbsp;

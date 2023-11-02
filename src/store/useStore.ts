@@ -9,21 +9,40 @@ export const useStore = create<IStore>()(
       store: [
         {
           title: 'Ser cambridge',
-          body: '180zł',
+          body: 'Jakiś tekst',
+          price: '180',
+          weight: '100g',
         },
         {
           title: 'Ser wiejski',
-          body: '280zł',
+          body: 'Jakiś tekst',
+          price: '280',
+          weight: '250g',
         },
         {
           title: 'Syr',
-          body: '320zł',
+          body: 'Jakiś tekst',
+          price: '320',
+          weight: '500g',
         },
       ],
       amount: 3,
-      addProduct: (title: string, body: string) =>
+      cartItems: [],
+      addProduct: (
+        title: string,
+        body: string,
+        price: string,
+        weight: string,
+      ) =>
         set((state: IStore) => ({
-          store: [...state.store, { title: title, body: body }],
+          store: [
+            ...state.store,
+            { title: title, body: body, price: price, weight: weight },
+          ],
+          // cartItems: [
+          //   ...state.cartItems,
+          //   { title: title, body: body, price: price, weight: weight },
+          // ],
         })),
       removeProduct: (title: string) =>
         set((state: IStore) => ({

@@ -8,9 +8,11 @@ import { Pathname } from '../../utils/Pathname';
 import { dataCardSpecialMenu } from '../../utils/dataCardMenu';
 import { dataSpecialOfferRouterLinks } from '../../utils/dataRouterList';
 import s from './SpecialOffers.module.scss';
+import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 
 function SpecialOffers() {
   const { t } = useTranslation();
+  useDocumentTitle(`${t('navigation.header.specialOffer').toUpperCase()}`);
   return (
     <>
       <Header />
@@ -24,8 +26,9 @@ function SpecialOffers() {
         </div>
         <div>
           {dataCardSpecialMenu &&
-            dataCardSpecialMenu.map((dish) => (
+            dataCardSpecialMenu.map((dish, index) => (
               <Card
+                key={index}
                 package={dish.package}
                 id={dish.id}
                 title={dish.title}

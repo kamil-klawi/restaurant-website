@@ -5,9 +5,11 @@ import Header from '../../components/Header/Header';
 import { Pathname } from '../../utils/Pathname';
 
 import s from './Contact.module.scss';
+import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 
 function Contact() {
   const { t } = useTranslation();
+  useDocumentTitle(`${t('navigation.header.contact').toUpperCase()}`);
   return (
     <>
       <Header />

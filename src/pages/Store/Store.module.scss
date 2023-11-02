@@ -4,13 +4,24 @@ $color-blue: #0093DD;
 
 .store__wrapper {
   padding: 4rem 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   font-family: 'Montserrat', sans-serif;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
 
   .store__category {
     padding: 0 8rem;
-    width: 30%;
+
+    @media screen and (max-width: 560px) {
+      padding: 0 2rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 0 4rem;
+    }
 
     .category__header {
       color: $color-black;
@@ -58,7 +69,14 @@ $color-blue: #0093DD;
 
   .store__list {
     padding-right: 6rem;
-    width: 70%;
+
+    @media screen and (min-width: 0px) and (max-width: 1024px) {
+      padding: 0 2rem;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1440px) {
+      padding: 0 4rem;
+    }
 
     .store__content {
       margin-bottom: 4rem;

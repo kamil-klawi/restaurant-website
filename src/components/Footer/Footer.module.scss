@@ -14,15 +14,17 @@ $color-blue-gray: #383E4E;
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (min-width: 0px) and (max-width: 940px) {
+      padding: 2rem 2rem;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
     .footer__section {
       .section__iconList {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-
-        li {
-          padding-right: 1rem;
-        }
       }
 
       h4 {
@@ -48,14 +50,24 @@ $color-blue-gray: #383E4E;
 
           padding: 0.75rem 0;
 
+          @media screen and (min-width: 0px) and (max-width: 1440px) {
+            padding: 0.5rem 0;
+          }
+
           h5, p, a {
             color: $color-white;
-            font-size: 16px;
+            font-size: 1rem;
             font-family: 'Montserrat', sans-serif;
             font-weight: 300;
             letter-spacing: 0.8px;
             text-decoration: none;
             opacity: 1;
+          }
+
+          p {
+            @media screen and (min-width: 940px) and (max-width: 1440px) {
+              width: 240px;
+            }
           }
 
           h5 {
@@ -73,6 +85,10 @@ $color-blue-gray: #383E4E;
     margin: 0 8rem;
     padding: 2rem 0;
     border-top: 0.1rem $color-white solid;
+
+    @media screen and (min-width: 0px) and (max-width: 940px) {
+      margin: 0 2rem;
+    }
       
     p {
       color: $color-white;

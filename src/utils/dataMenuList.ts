@@ -139,7 +139,7 @@ export const dataMainDishes: MenuItemProps[] = [
     price: '51',
   },
   {
-    name: i18next.t('menu.frenduckLegchOnionSoup.name'),
+    name: i18next.t('menu.duckLeg.name'),
     ingredients: i18next.t('menu.duckLeg.ingredients'),
     price: '55',
   },

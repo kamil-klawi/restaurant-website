@@ -6,8 +6,8 @@ function MenuRouterList(props: MenuRouterListProps) {
   return (
     <ul className={s.menuList}>
       {props.package &&
-        props.package.map((link) => (
-          <li className={s.menuList__item}>
+        props.package.map((link, index) => (
+          <li key={index} className={s.menuList__item}>
             <Anchor
               className={`${s.menuList__link}`}
               href={link.href}

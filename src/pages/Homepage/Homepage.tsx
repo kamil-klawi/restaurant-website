@@ -12,7 +12,7 @@ import s from './Homepage.module.scss';
 
 function Homepage() {
   const { t } = useTranslation();
-  useDocumentTitle('A la française - restauracja francuska');
+  useDocumentTitle(`${t('homeURL').toUpperCase()}`);
   return (
     <>
       <Header />

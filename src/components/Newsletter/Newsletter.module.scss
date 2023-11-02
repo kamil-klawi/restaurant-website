@@ -10,12 +10,16 @@ $color-blue: #0093DD;
   border-bottom: 0.25rem solid $color-blue;
   background-color: $color-white;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-
   top: 0;
   left: 0;
   transform: translate(23.5%, 15%);
   position: relative;
   z-index: 9999;
+
+  @media screen and (min-width: 0px) and (max-width: 1024px) {
+    flex-direction: column;
+    transform: translate(23.5%, 5%);
+  }
 
   .newsletter__image {
     width: fit-content;
@@ -23,7 +27,14 @@ $color-blue: #0093DD;
 
   .newsletter__content {
     margin-left: 4rem;
-    margin-top: 2rem;
+
+    @media screen and (min-width: 0px) and (max-width: 1024px) {
+      margin: 2rem 2rem;
+    }
+  
+    @media screen and (min-width: 1024px) and (max-width: 1440px) {
+      margin-left: 3rem;
+    }
 
     .newsletter__header {
       font-size: 2rem;
@@ -39,6 +50,14 @@ $color-blue: #0093DD;
       height: 0.2rem;
       background-color: $color-blue;
       opacity: 0.3;
+
+      @media screen and (min-width: 0px) and (max-width: 1024px) {
+        margin: 1rem 0;
+      }
+    
+      @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        margin: 1rem 0;
+      }
     }
 
     .newsletter__text {
@@ -63,6 +82,16 @@ $color-blue: #0093DD;
         letter-spacing: 0.8px;
         text-decoration: none;
         border-bottom: 0.2rem solid $color-black;
+
+        @media screen and (min-width: 0px) and (max-width: 1024px) {
+          width: 100%;
+          margin-right: 0;
+        }
+      
+        @media screen and (min-width: 1024px) and (max-width: 1600px) {
+          width: 90%;
+          margin-right: 0;
+        }
       }
       
       .newsletter__btn {
@@ -75,6 +104,10 @@ $color-blue: #0093DD;
         letter-spacing: 0.8px;
         text-decoration: none;
         background-color: $color-blue;
+
+        @media screen and (min-width: 0px) and (max-width: 1600px) {
+          margin-top: 2rem;
+        }
       }
 
       .newsletter__accept {

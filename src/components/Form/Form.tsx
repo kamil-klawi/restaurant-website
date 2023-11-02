@@ -41,76 +41,70 @@ function Form() {
           <h4 className={`${s.radioGroup__header} mt-6`}>
             {t('contact.topic')}:
           </h4>
-          <div className="flex my-6">
-            <RadioButton
-              checked={true}
-              label={t('contact.reservation')}
-              name="radio"
-            />
-            <RadioButton
-              checked={false}
-              label={t('contact.party')}
-              name="radio"
-            />
-            <RadioButton
-              checked={false}
-              label={t('contact.catering')}
-              name="radio"
-            />
-            <RadioButton
-              checked={false}
-              label={t('contact.onlineOrder')}
-              name="radio"
-            />
-          </div>
-        </div>
-        <div>
-          <div className="flex justify-between">
-            <div className={s.form__datepicker}>
-              <label htmlFor="" className={s.datepicker__label}>
-                {t('contact.date')}:&nbsp;
-                <span className="text-blue-400">*</span>
-              </label>
-              <DatePick />
+          <div className="flex justify-between my-6 lg:flex-col">
+            <div className="lg:py-2">
+              <RadioButton
+                checked={true}
+                label={t('contact.reservation')}
+                name="radio"
+              />
             </div>
-            <div className={s.form__timepicker}>
-              <label htmlFor="" className={s.timepicker__label}>
-                {t('contact.time')}:&nbsp;
-                <span className="text-blue-400">*</span>
-              </label>
-              <TimePick />
+            <div className="lg:py-2">
+              <RadioButton label={t('contact.party')} name="radio" />
             </div>
-            <div className={s.form__counterpicker}>
-              <label htmlFor="" className={s.counterpicker__label}>
-                {t('contact.people')}:&nbsp;
-                <span className="text-blue-400">*</span>
-              </label>
-              <CounterPick />
+            <div className="lg:py-2">
+              <RadioButton label={t('contact.catering')} name="radio" />
+            </div>
+            <div className="lg:py-2">
+              <RadioButton label={t('contact.onlineOrder')} name="radio" />
             </div>
           </div>
-          <Input
-            id="firstname"
-            name="firstname"
-            type="text"
-            label={t('contact.firstName')}
-            placeholder={t('contact.firstNamePlaceholder')}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.firstname}
-            className={`${s.form__firstname} ${
-              formik.touched.firstname && formik.errors.firstname
-                ? 'border-red-500'
-                : ''
-            }`}
-            required={true}
-          />
-          {formik.touched.firstname && formik.errors.firstname ? (
-            <div className="mb-4 text-sm font-bold text-red-500">
-              {formik.errors.firstname}
-            </div>
-          ) : null}
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between lg:flex-col">
+          <div className={s.form__datepicker}>
+            <label htmlFor="" className={s.datepicker__label}>
+              {t('contact.date')}:&nbsp;
+              <span className="text-blue-400">*</span>
+            </label>
+            <DatePick />
+          </div>
+          <div className={s.form__timepicker}>
+            <label htmlFor="" className={s.timepicker__label}>
+              {t('contact.time')}:&nbsp;
+              <span className="text-blue-400">*</span>
+            </label>
+            <TimePick />
+          </div>
+          <div className={s.form__counterpicker}>
+            <label htmlFor="" className={s.counterpicker__label}>
+              {t('contact.people')}:&nbsp;
+              <span className="text-blue-400">*</span>
+            </label>
+            <CounterPick />
+          </div>
+        </div>
+        <Input
+          id="firstname"
+          name="firstname"
+          type="text"
+          label={t('contact.firstName')}
+          placeholder={t('contact.firstNamePlaceholder')}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.firstname}
+          className={`${s.form__firstname} ${
+            formik.touched.firstname && formik.errors.firstname
+              ? 'border-red-500'
+              : ''
+          }`}
+          required={true}
+        />
+        {formik.touched.firstname && formik.errors.firstname ? (
+          <div className="mb-4 text-sm font-bold text-red-500">
+            {formik.errors.firstname}
+          </div>
+        ) : null}
+        <div className="flex justify-between lg:flex-col">
           <div>
             <Input
               id="email"

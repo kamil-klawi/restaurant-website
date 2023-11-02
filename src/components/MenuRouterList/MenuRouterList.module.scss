@@ -9,10 +9,24 @@ $color-black: #000000;
   align-items: center;
   border-bottom: 0.1rem solid $color-black;
 
+  @media screen and (max-width: 560px) {
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
   .menuList__item {
     padding-right: 2rem;
     list-style-type: none;
     list-style: none;
+
+    @media screen and (max-width: 1024px) {
+      padding-right: 1rem;
+    }
+
+    @media screen and (max-width: 560px) {
+      padding: 0.25rem 0;
+    }
 
     .menuList__link {
       text-transform: uppercase;

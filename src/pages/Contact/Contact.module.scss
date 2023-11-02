@@ -5,6 +5,14 @@ $color-blue: #0093DD;
   width: 50%;
   margin: auto;
 
+  @media screen and (min-width: 0px) and (max-width: 1024px) {
+    width: 70%;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    width: 60%;
+  }
+
   .contact__header {
     .contact__pathname {
       text-align: center;

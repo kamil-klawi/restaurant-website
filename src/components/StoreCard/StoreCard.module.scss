@@ -4,14 +4,29 @@ $color-gray: #0000001A;
 $color-white: #ffffff;
 
 .card {
-  margin-right: 1rem;
-  margin-top: 1rem;
+  margin: 1rem 1rem 0 0;
   padding: 2rem;
   width: 32%;
   display: block;
   position: relative;
   background-color: $color-white;
   box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+
+  @media screen and (min-width: 0px) and (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    width: 45%;
+  }
+
+  @media screen and (min-width: 1280px) and (max-width: 1440px) {
+    width: 47%;
+  }
+
+  @media screen and (min-width: 1440px) and (max-width: 1740px) {
+    width: 45%;
+  }
 
   .card__header {
     margin: 0 auto;
