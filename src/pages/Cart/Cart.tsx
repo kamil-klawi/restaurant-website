@@ -12,10 +12,10 @@ function Cart() {
   return (
     <>
       <Header />
-      <div className="mx-80 my-24">
+      <div className="mx-64 my-24 lg:mx-4 lg:my-8">
         {cartItems.length == 0 && (
           <div style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            <h2 className="text-4xl tracking-wide font-light text-black opacity-75">
+            <h2 className="text-4xl tracking-wide font-light text-black opacity-75 lg:text-2xl">
               {t('cart.header')}
             </h2>
             <div className="my-8 w-16 h-1 bg-blue-400" />
@@ -32,7 +32,7 @@ function Cart() {
         )}
         {cartItems.length > 0 && (
           <div style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            <h2 className="text-4xl tracking-wide font-light text-black opacity-75">
+            <h2 className="text-4xl tracking-wide font-light text-black opacity-75 lg:text-2xl">
               {t('cart.header')}
             </h2>
             <div className="my-8 w-16 h-1 bg-blue-400" />
@@ -50,7 +50,7 @@ function Cart() {
         {cartItems.length > 0 && (
           <button
             style={{ fontFamily: 'Montserrat, sans-serif' }}
-            className="bg-red-500 py-3 px-6 capitalize text-white font-bold rounded"
+            className="bg-red-500 py-3 px-6 capitalize text-white font-bold rounded lg:py-2 lg:px-4"
             onClick={removeAllProducts}
           >
             usuń

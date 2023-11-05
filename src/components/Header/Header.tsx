@@ -3,19 +3,15 @@ import { useTranslation } from 'react-i18next';
 import alafrancaiseLogo from '../../assets/images/a_la_francaise_logo.png';
 import s from './Header.module.scss';
 import { useStore } from '../../store/useStore';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function Header() {
   const [isOpen, setOpen] = useState<boolean>(false);
-  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 1350);
   const cartItems = useStore((state) => state.cartItems);
 
-  useEffect(() => {
-    setIsMobile(window.innerWidth < 1350);
-  }, []);
-
-  const handleHamurger = () => {
+  const handleHamburger = () => {
     setOpen(!isOpen);
+    console.log(isOpen);
   };
 
   const handleLanguage = (language: string) => {
@@ -47,25 +43,28 @@ function Header() {
             pl
           </button>
         </div>
-        {isMobile && (
-          <button onClick={handleHamurger}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="#000000"
-              viewBox="0 0 256 256"
-            >
-              <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
-            </svg>
-          </button>
-        )}
+        <button className={s.nav__hamburger} onClick={handleHamburger}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+          </svg>
+        </button>
         <a href="/cart" className={s.nav__cart}>
           <CartIcon />
           &nbsp;
           <span className="font-bold">{cartItems.length}</span>
         </a>
       </nav>
+      {isOpen && (
+        <nav className={s.nav}>
+          <HamburgerMenu />
+        </nav>
+      )}
     </header>
   );
 }
@@ -121,6 +120,47 @@ function MenuList() {
           }`}
         >
           {t('navigation.header.contact')}
+        </a>
+      </li>
+    </ul>
+  );
+}
+
+function HamburgerMenu() {
+  const cartItems = useStore((state) => state.cartItems);
+  const { t } = useTranslation();
+  return (
+    <ul className={s.hamburger__list}>
+      <li className={s.hamburger__item}>
+        <a href="/" className={s.hamburger__link}>
+          {t('navigation.header.bonjour')}
+        </a>
+      </li>
+      <li className={s.hamburger__item}>
+        <a href="/menu" className={s.hamburger__link}>
+          {t('navigation.header.menu')}
+        </a>
+      </li>
+      <li className={s.hamburger__item}>
+        <a href="/special_offers" className={s.hamburger__link}>
+          {t('navigation.header.specialOffer')}
+        </a>
+      </li>
+      <li className={s.hamburger__item}>
+        <a href="/store" className={s.hamburger__link}>
+          {t('navigation.header.store')}
+        </a>
+      </li>
+      <li className={s.hamburger__item}>
+        <a href="/contact" className={s.hamburger__link}>
+          {t('navigation.header.contact')}
+        </a>
+      </li>
+      <li>
+        <a href="/cart" className={s.hamburger__cart}>
+          <CartIcon />
+          &nbsp;
+          <span className="font-bold">{cartItems.length}</span>
         </a>
       </li>
     </ul>

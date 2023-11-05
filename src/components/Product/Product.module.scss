@@ -11,6 +11,14 @@ $color-blue: #0093DD;
   align-items: center;
   border-bottom: 0.15rem solid $color-gray;
 
+  @media screen and (min-width: 0px) and (max-width: 1024px) {
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: lighten(antiquewhite, 3);
+  }
+
   .product__btn {
     color: $color-white;
     font-size: 2rem;
@@ -21,6 +29,10 @@ $color-blue: #0093DD;
     padding: 0.15rem 1rem;
     background-color: $color-blue;
     border-radius: 2rem;
+
+    @media screen and (min-width: 0px) and (max-width: 1024px) {
+      font-size: 1.5rem;
+    }
   }
 
   .product__content {
@@ -35,7 +47,13 @@ $color-blue: #0093DD;
       font-weight: 300;
       letter-spacing: 0.8px;
       text-decoration: none;
+      padding: 1rem 0 0.25rem;
+
+      @media screen and (min-width: 0px) and (max-width: 1024px) {
+        font-size: 1.5rem;
+      }
     }
+
     .product__weight {
       opacity: 0.65;
       color: $color-black;
@@ -44,6 +62,7 @@ $color-blue: #0093DD;
       font-weight: 300;
       letter-spacing: 0.8px;
       text-decoration: none;
+      padding-bottom: 1rem;
 
       &::first-letter {
         text-transform: uppercase;
@@ -58,5 +77,10 @@ $color-blue: #0093DD;
     font-weight: 300;
     letter-spacing: 0.8px;
     text-decoration: none;
+
+    @media screen and (min-width: 0px) and (max-width: 1024px) {
+      font-size: 1.25rem;
+      padding-top: 1rem;
+    }
   }
 }

@@ -51,7 +51,7 @@ function Modal(props: ModalProps) {
             <button className={s.modal__btn} type="submit">
               {t('modal.buyNow')}
             </button>
-            <button className={s.modal__btn} type="button">
+            <button className={s.modal__btn} type="submit">
               {t('modal.addToCart')}
             </button>
           </div>
