@@ -306,5 +306,9 @@
     "price": "cena",
     "amount": "ilość",
     "weightToChoose": "waga do wyboru"
+  },
+  "message": {
+    "AddProductToCart": "Dodano produkt do koszyka",
+    "CleanTheCart": "Czy chcesz wyczyścić swój koszyk?"
   }
 }

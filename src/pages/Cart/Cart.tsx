@@ -20,6 +20,14 @@ function Cart() {
   const removeAllProducts = useStore((state) => state.removeAllProducts);
   const { t } = useTranslation();
 
+  const handleClick = () => {
+    if (confirm(t('message.CleanTheCart'))) {
+    } else {
+      return;
+    }
+    removeAllProducts();
+  };
+
   return (
     <>
       <Header />
@@ -62,7 +70,7 @@ function Cart() {
           <button
             style={{ fontFamily: 'Montserrat, sans-serif' }}
             className="bg-red-500 py-3 px-6 capitalize text-white font-bold rounded lg:py-2 lg:px-4"
-            onClick={removeAllProducts}
+            onClick={handleClick}
           >
             usuń
           </button>

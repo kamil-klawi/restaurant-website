@@ -13,6 +13,7 @@ function Modal(props: ModalProps) {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault;
+    alert(t('message.AddProductToCart'));
     addProduct(props.title, props.body, props.price, props.weight);
   };
 

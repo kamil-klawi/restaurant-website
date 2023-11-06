@@ -306,5 +306,9 @@
     "price": "price",
     "amount": "amount",
     "weightToChoose": "weight to choose"
+  },
+  "message": {
+    "AddProductToCart": "Product has been added to the cart",
+    "CleanTheCart": "Do you want to clear your cart?"
   }
 }

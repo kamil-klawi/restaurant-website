@@ -9,19 +9,19 @@ export const useStore = create<IStore>()(
       store: [
         {
           title: 'Ser cambridge',
-          body: 'Jakiś tekst',
+          body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
           price: '180',
           weight: '100g',
         },
         {
           title: 'Ser wiejski',
-          body: 'Jakiś tekst',
+          body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
           price: '280',
           weight: '250g',
         },
         {
           title: 'Syr',
-          body: 'Jakiś tekst',
+          body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque.',
           price: '320',
           weight: '500g',
         },
