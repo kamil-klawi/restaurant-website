@@ -128,9 +128,13 @@ function DeliveryForm() {
         .min(3, t('invalid.min3Characters'))
         .required(t('invalid.required')),
       address: Yup.string().required(t('invalid.required')),
-      postcode: Yup.string().required(t('invalid.required')),
+      postcode: Yup.string()
+        .matches(/^\d{2}-\d{3}$/, t('invalid.postcode'))
+        .required(t('invalid.required')),
       locality: Yup.string().required(t('invalid.required')),
-      phone: Yup.string().required(t('invalid.required')),
+      phone: Yup.string()
+        .matches(/^((\+[4]{1}[8]{1})([0-9]{9}))$/, t('invalid.phoneNumber'))
+        .required(t('invalid.required')),
       email: Yup.string()
         .email(t('invalid.email'))
         .required(t('invalid.required')),

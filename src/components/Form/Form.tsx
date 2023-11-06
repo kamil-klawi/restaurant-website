@@ -27,7 +27,9 @@ function Form() {
       email: Yup.string()
         .email(t('invalid.email'))
         .required(t('invalid.required')),
-      phone: Yup.string().required(t('invalid.required')),
+      phone: Yup.string()
+        .matches(/^((\+[4]{1}[8]{1})([0-9]{9}))$/, t('invalid.phoneNumber'))
+        .required(t('invalid.required')),
     }),
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));

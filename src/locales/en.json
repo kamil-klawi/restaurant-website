@@ -6,7 +6,9 @@
   "invalid": {
     "required": "Required field",
     "email": "Invalid email address",
-    "min3Characters": "This field requires at least 3 characters"
+    "min3Characters": "This field requires at least 3 characters",
+    "postcode": "Invalid postal code",
+    "phoneNumber": "Invalid phone number format"
   },
   "navigate": "navigation",
   "info": "information",
@@ -296,7 +298,7 @@
     "confirmOrder": "confirm order",
     "fullNamePlaceholder": "Enter fullName",
     "addressPlaceholder": "Enter address",
-    "postcodePlaceholder": "Enter postcode",
+    "postcodePlaceholder": "Enter postcode [XX-XXX]",
     "localityPlaceholder": "Enter locality",
     "phonePlaceholder": "Enter phone number",
     "emailPlaceholder": "Enter email"

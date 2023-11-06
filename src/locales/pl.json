@@ -6,7 +6,9 @@
   "invalid": {
     "required": "Wymagane pole",
     "email": "Nieprawidłowy adres e-mail",
-    "min3Characters": "To pole wymaga przynajmniej 3 znaków"
+    "min3Characters": "To pole wymaga przynajmniej 3 znaków",
+    "postcode": "Nieprawidłowy kod pocztowy",
+    "phoneNumber": "Nieprawidłowy format telefonu"
   },
   "navigate": "nawigacja",
   "info": "informacje",
@@ -296,7 +298,7 @@
     "confirmOrder": "potwierdź zamówienie",
     "fullNamePlaceholder": "Imię i nazwisko",
     "addressPlaceholder": "Adres zamieszkania",
-    "postcodePlaceholder": "Kod pocztowy",
+    "postcodePlaceholder": "Kod pocztowy [XX-XXX]",
     "localityPlaceholder": "Miejscowość",
     "phonePlaceholder": "Telefon kontaktowy",
     "emailPlaceholder": "Adres e-mail"
