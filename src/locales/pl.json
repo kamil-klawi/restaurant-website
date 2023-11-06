@@ -280,6 +280,7 @@
     "header": "Produkty w koszyku",
     "description": "Brak produktów w koszyku.",
     "btn": "Przejdź do sklepu",
+    "delete": "usuń",
     "secondHeader": "Formularz zamówienia",
     "customer": "dane kupującego",
     "fullName": "Imię i nazwisko",

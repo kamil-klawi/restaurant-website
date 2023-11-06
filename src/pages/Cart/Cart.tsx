@@ -72,7 +72,7 @@ function Cart() {
             className="bg-red-500 py-3 px-6 capitalize text-white font-bold rounded lg:py-2 lg:px-4"
             onClick={handleClick}
           >
-            usuń
+            {t('cart.delete')}
           </button>
         )}
         {cartItems.length > 0 && (

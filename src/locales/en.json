@@ -280,6 +280,7 @@
     "header": "Products in basket",
     "description": "No products in cart.",
     "btn": "Go to store",
+    "delete": "delete",
     "secondHeader": "Order form",
     "customer": "Buyer's details",
     "fullName": "FullName",
