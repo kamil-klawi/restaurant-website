@@ -1,0 +1,33 @@
+$color-black: #000000;
+$color-white: #ffffff;
+$color-blue: #0093DD;
+
+form {
+  .form__input {
+    margin: 1rem 0;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    color: $color-black;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    border: .1rem solid rgba(0,0,0,0.2);
+    opacity: 0.75;
+  
+    @media screen and (min-width: 0px) and (max-width: 1440px) {
+      padding: 1rem;
+    }
+  }
+  
+  .form__delivery {
+    padding: 0.75rem 2rem;
+    color: $color-white;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    background-color: $color-blue;
+    text-transform: uppercase;
+  }
+}

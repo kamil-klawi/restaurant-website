@@ -279,7 +279,26 @@
   "cart": {
     "header": "Produkty w koszyku",
     "description": "Brak produktów w koszyku.",
-    "btn": "Przejdź do sklepu"
+    "btn": "Przejdź do sklepu",
+    "secondHeader": "Formularz zamówienia",
+    "customer": "dane kupującego",
+    "fullName": "Imię i nazwisko",
+    "address": "Adres zamieszkania",
+    "postcode": "Kod pocztowy",
+    "locality": "Miejscowość",
+    "phone": "Telefon kontaktowy",
+    "email": "Adres e-mail",
+    "deliveryWay": "sposób dostawy",
+    "own": "odbiór osobisty",
+    "ownDelivery": "dowóz własny",
+    "courier": "kurier",
+    "confirmOrder": "potwierdź zamówienie",
+    "fullNamePlaceholder": "Imię i nazwisko",
+    "addressPlaceholder": "Adres zamieszkania",
+    "postcodePlaceholder": "Kod pocztowy",
+    "localityPlaceholder": "Miejscowość",
+    "phonePlaceholder": "Telefon kontaktowy",
+    "emailPlaceholder": "Adres e-mail"
   },
   "modal": {
     "buyNow": "kup teraz",

@@ -279,7 +279,26 @@
   "cart": {
     "header": "Products in basket",
     "description": "No products in cart.",
-    "btn": "Go to store"
+    "btn": "Go to store",
+    "secondHeader": "Order form",
+    "customer": "Buyer's details",
+    "fullName": "FullName",
+    "address": "Address",
+    "postcode": "Postcode",
+    "locality": "Locality",
+    "phone": "Phone number",
+    "email": "Email",
+    "deliveryWay": "delivery way",
+    "own": "personal collection",
+    "ownDelivery": "own delivery",
+    "courier": "courier",
+    "confirmOrder": "confirm order",
+    "fullNamePlaceholder": "Enter fullName",
+    "addressPlaceholder": "Enter address",
+    "postcodePlaceholder": "Enter postcode",
+    "localityPlaceholder": "Enter locality",
+    "phonePlaceholder": "Enter phone number",
+    "emailPlaceholder": "Enter email"
   },
   "modal": {
     "buyNow": "buy now",
