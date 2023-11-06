@@ -1,7 +1,9 @@
+import { IAlcohol } from './IAlcohol';
 import { IProduct } from './IProduct';
 
 export interface IStore {
   store: IProduct[];
+  alcohols: IAlcohol[];
   cartItems: IProduct[];
   addProduct: (
     title: string,

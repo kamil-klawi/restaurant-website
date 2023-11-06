@@ -1,3 +1,4 @@
+$color-white: #ffffff;
 $color-black: #000000;
 $color-gray: #0000001A;
 $color-blue: #0093DD;
@@ -76,6 +77,38 @@ $color-blue: #0093DD;
 
     @media screen and (min-width: 1024px) and (max-width: 1440px) {
       padding: 0 4rem;
+    }
+
+    .data__input {
+      margin: 1rem 0;
+      padding: 1rem 2rem;
+      color: $color-black;
+      font-size: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.8px;
+      text-decoration: none;
+      border: .1rem solid rgba(0,0,0,0.2);
+
+      @media screen and (min-width: 0px) and (max-width: 1440px) {
+        padding: 1rem;
+      }
+    }
+
+    .data__btn {
+      padding: 0.75rem 2rem;
+      color: $color-white;
+      font-size: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-decoration: none;
+      background-color: $color-blue;
+      text-transform: uppercase;
+
+      @media screen and (min-width: 0px) and (max-width: 1440px) {
+        padding: 1rem;
+      }
     }
 
     .store__content {

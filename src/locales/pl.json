@@ -271,12 +271,19 @@
     "menu": "menu",
     "specialOffers": "oferty specjalne",
     "store": "sklep",
+    "storeAlcohols": "sklep / alkohole",
     "contact": "kontakt"
   },
   "store": {
     "category": "kategoria",
     "cheeses": "sery",
-    "description": "Najwyższej jakości wyroby importowane z Francji, wytwarzane według surowo strzerzonych receptur. Certyfikacja AOC gwarantuje oryginalny, pełny smak każdego rodzaju sprzedawanych serów. Najlepiej smakują z naszą domową konfiturą, miodem, winogronami i orzechami."
+    "alcohols": "alkohole",
+    "cheeseDescription": "Najwyższej jakości wyroby importowane z Francji, wytwarzane według surowo strzerzonych receptur. Certyfikacja AOC gwarantuje oryginalny, pełny smak każdego rodzaju sprzedawanych serów. Najlepiej smakują z naszą domową konfiturą, miodem, winogronami i orzechami.",
+    "alcoholsDescription": "Przy zamówieniu alkoholi dostępny jest wyłącznie odbiór własny w restauracji, bez możliwości wysyłki kurierskiej.",
+    "tooYoung": "Niestety! Osobą niepełnoletnim nie sprzedajemy alkoholu.",
+    "info": "Aby przejść dalej musisz mieć ukończone 18 lat.",
+    "accept": "potwierdź swój wiek",
+    "ageValidation": "Wybierz datę urodzin:"
   },
   "cart": {
     "header": "Produkty w koszyku",

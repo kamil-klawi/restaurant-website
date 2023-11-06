@@ -6,6 +6,7 @@ import Menu from './pages/Menu/Menu';
 import SpecialOffers from './pages/SpecialOffers/SpecialOffers';
 import Store from './pages/Store/Store';
 import Error from './pages/Error/Error';
+import Alcohols from './pages/Alcohols/Alcohols';
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
   {
     path: '/store',
     element: <Store />,
+  },
+  {
+    path: '/store/alcohols',
+    element: <Alcohols />,
   },
   {
     path: '/contact',

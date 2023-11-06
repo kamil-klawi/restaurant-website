@@ -271,12 +271,19 @@
     "menu": "menu",
     "specialOffers": "special offers",
     "store": "store",
+    "storeAlcohols": "store / alcohols",
     "contact": "contact"
   },
   "store": {
     "category": "category",
     "cheeses": "cheeses",
-    "description": "The highest quality products imported from France, manufactured according to strictly guarded recipes. AOC certification guarantees the original, full taste of each type of cheese sold. They taste best with our homemade jam, honey, grapes and nuts."
+    "alcohols": "alcohols",
+    "cheeseDescription": "The highest quality products imported from France, manufactured according to strictly guarded recipes. AOC certification guarantees the original, full taste of each type of cheese sold. They taste best with our homemade jam, honey, grapes and nuts.",
+    "alcoholsDescription": "When ordering alcohol, only own delivery is available in restaurants, courier delivery is not possible.",
+    "tooYoung": "Unfortunately! We do not sell alcohol to minors.",
+    "info": "You must be over 18 to proceed.",
+    "accept": "confirm your age",
+    "ageValidation": "Select birthday:"
   },
   "cart": {
     "header": "Products in basket",

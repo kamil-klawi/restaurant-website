@@ -26,6 +26,15 @@ export const useStore = create<IStore>()(
           weight: '500g',
         },
       ],
+      alcohols: [
+        {
+          title: 'Winko',
+          body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
+          price: '180',
+          volume: '30cl',
+          percent: '19%',
+        },
+      ],
       cartItems: [],
       addProduct: (
         title: string,

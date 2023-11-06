@@ -1,12 +1,13 @@
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { ChangeEvent, useState } from 'react';
 import { useStore } from '../../store/useStore';
 
 // components
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
-import Modal from '../../components/Modal/Modal';
+import Input from '../../components/Input/Input';
 import StoreCard from '../../components/StoreCard/StoreCard';
+import Modal from '../../components/Modal/Modal';
 
 // utils
 import { Pathname } from '../../utils/Pathname';
@@ -15,15 +16,47 @@ import { Pathname } from '../../utils/Pathname';
 import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 
 // styles
-import s from './Store.module.scss';
+import s from '../Store/Store.module.scss';
 
-function Store() {
-  const store = useStore((state) => state.store);
+function Alcohols() {
+  const [errorMessage, setErrorMessage] = useState<string>('');
+  const [showAlcohols, setShowAlcohols] = useState<boolean>(false);
   const [openModal, setOpenModal] = useState<boolean>(false);
+
+  const [year, setYear] = useState<number>();
+  const [month, setMonth] = useState<number>();
+  const [day, setDay] = useState<number>();
+
+  const alcohols = useStore((state) => state.alcohols);
   const { t } = useTranslation();
   useDocumentTitle(`${t('navigation.header.store').toUpperCase()}`);
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setYear(Number(e.target.value.split('-')[0]));
+    setMonth(Number(e.target.value.split('-')[1]));
+    setDay(Number(e.target.value.split('-')[2]));
+  };
+
+  const handleClick = () => {
+    const currentYear = new Date().getFullYear();
+    const currentMonth = new Date().getMonth();
+    const currentDay = new Date().getDate();
+    const age = currentYear - Number(year);
+    if (
+      age < 18 ||
+      (age == 18 && Number(month) > currentMonth) ||
+      (age == 18 && Number(month) == currentMonth && Number(day) > currentDay)
+    ) {
+      setErrorMessage(t('store.tooYoung'));
+      setShowAlcohols(false);
+    } else {
+      setErrorMessage('');
+      setShowAlcohols(true);
+    }
+  };
+
   return (
-    <div>
+    <>
       <Header />
       <div className={s.store__wrapper}>
         <div className={s.store__category}>
@@ -37,15 +70,44 @@ function Store() {
               {t('homeURL')} /&nbsp;
               <span className="capitalize">{Pathname()}</span>
             </div>
-            <h2 className={s.list__header}>{t('store.cheeses')}</h2>
+            <h2 className={s.list__header}>{t('store.alcohols')}</h2>
             <div className={s.list__breakline} />
             <p className={s.list__description}>
-              {t('store.cheeseDescription')}
+              {t('store.alcoholsDescription')}
             </p>
           </div>
+          <div className="w-full h-1 bg-gray-200 mb-8" />
+          {!showAlcohols && (
+            <h4 className="text-md font-bold text-red-400 mb-6">
+              {t('store.info')}
+            </h4>
+          )}
           <div className="flex flex-wrap">
-            {store &&
-              store.map((product, index) => (
+            {!showAlcohols && (
+              <div>
+                <div>
+                  <Input
+                    type="date"
+                    placeholder="mm/dd/yyyy"
+                    id="age"
+                    name="age"
+                    label={t('store.ageValidation')}
+                    className={s.data__input}
+                    onChange={handleChange}
+                    required={false}
+                    onBlur={() => ''}
+                  />
+                  <div className="text-red-400 font-bold text-sm first-letter:uppercase mb-4">
+                    {errorMessage}
+                  </div>
+                </div>
+                <button className={s.data__btn} onClick={handleClick}>
+                  {t('store.accept')}
+                </button>
+              </div>
+            )}
+            {showAlcohols &&
+              alcohols.map((product, index) => (
                 <StoreCard
                   key={index}
                   title={product.title}
@@ -57,25 +119,24 @@ function Store() {
         </div>
       </div>
       {openModal &&
-        store.map((product, index) => (
+        alcohols.map((product, index) => (
           <Modal
             key={index}
             title={product.title}
             body={product.body}
-            weight={product.weight}
+            weight={product.volume}
             price={product.price}
             closeModal={setOpenModal}
           />
         ))}
       <Footer />
-    </div>
+    </>
   );
 }
 
 function MenuList() {
   const { t } = useTranslation();
   const path = window.location.pathname.replace('/', '');
-  console.log(path);
   return (
     <ul className={s.category__list}>
       <li className={s.category__item}>
@@ -154,4 +215,4 @@ function MenuList() {
   );
 }
 
-export default Store;
+export default Alcohols;

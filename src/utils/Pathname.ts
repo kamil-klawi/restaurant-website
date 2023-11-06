@@ -10,6 +10,8 @@ export function Pathname() {
       return t('pathname.specialOffers');
     case 'store':
       return t('pathname.store');
+    case 'store/alcohols':
+      return t('pathname.storeAlcohols');
     case 'contact':
       return t('pathname.contact');
   }
