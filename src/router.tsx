@@ -8,6 +8,8 @@ import Store from './pages/Store/Store';
 import Error from './pages/Error/Error';
 import Alcohols from './pages/Alcohols/Alcohols';
 import ColdCuts from './pages/ColdCuts/ColdCuts';
+import Catering from './pages/Catering/Catering';
+import Deli from './pages/Deli/Deli';
 
 export const router = createBrowserRouter([
   {
@@ -35,8 +37,16 @@ export const router = createBrowserRouter([
     element: <ColdCuts />,
   },
   {
+    path: '/store/deli',
+    element: <Deli />,
+  },
+  {
     path: '/store/alcohols',
     element: <Alcohols />,
+  },
+  {
+    path: '/store/catering',
+    element: <Catering />,
   },
   {
     path: '/contact',

@@ -4,6 +4,8 @@ import { IProduct } from './IProduct';
 export interface IStore {
   cheeses: IProduct[];
   coldCuts: IProduct[];
+  deli: IProduct[];
+  catering: IProduct[];
   alcohols: IAlcohol[];
   cartItems: IProduct[];
   addProduct: (
