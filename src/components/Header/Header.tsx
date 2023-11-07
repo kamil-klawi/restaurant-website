@@ -32,13 +32,20 @@ function Header() {
         </a>
         <MenuList />
         <div className={s.nav__lang}>
-          <button onClick={() => handleLanguage('en')} className={s.lang__link}>
+          <button
+            onClick={() => handleLanguage('en')}
+            className={`${s.lang__link} ${
+              localStorage.getItem('lang') == 'en' ? s.lang__link_active : ''
+            }`}
+          >
             en
           </button>
           <span>|</span>
           <button
             onClick={() => handleLanguage('pl')}
-            className={`${s.lang__link} ${s.lang__link_active}`}
+            className={`${s.lang__link} ${
+              localStorage.getItem('lang') == 'pl' ? s.lang__link_active : ''
+            }`}
           >
             pl
           </button>
