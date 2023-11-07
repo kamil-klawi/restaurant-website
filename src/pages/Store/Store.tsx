@@ -16,11 +16,24 @@ import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 
 // styles
 import s from './Store.module.scss';
+import { IProduct } from '../../types/IProduct';
 
 function Store() {
-  const store = useStore((state) => state.store);
+  const cheeses = useStore((state) => state.cheeses);
+
   const [openModal, setOpenModal] = useState<boolean>(false);
+  const [selectedProduct, setSelectedProduct] = useState<IProduct | undefined>(
+    cheeses[0],
+  );
+
+  const handleClick = (id: number) => {
+    setSelectedProduct(cheeses[id]);
+  };
+
+  // translation
   const { t } = useTranslation();
+
+  // set document title
   useDocumentTitle(`${t('navigation.header.store').toUpperCase()}`);
   return (
     <div>
@@ -44,29 +57,28 @@ function Store() {
             </p>
           </div>
           <div className="flex flex-wrap">
-            {store &&
-              store.map((product, index) => (
+            {cheeses &&
+              cheeses.map((product, index) => (
                 <StoreCard
                   key={index}
                   title={product.title}
                   price={product.price}
+                  setProduct={() => handleClick(index)}
                   openModal={setOpenModal}
                 />
               ))}
           </div>
         </div>
       </div>
-      {openModal &&
-        store.map((product, index) => (
-          <Modal
-            key={index}
-            title={product.title}
-            body={product.body}
-            weight={product.weight}
-            price={product.price}
-            closeModal={setOpenModal}
-          />
-        ))}
+      {openModal && (
+        <Modal
+          title={selectedProduct?.title}
+          body={selectedProduct?.body}
+          weight={selectedProduct?.weight}
+          price={selectedProduct?.price}
+          closeModal={setOpenModal}
+        />
+      )}
       <Footer />
     </div>
   );
@@ -75,7 +87,6 @@ function Store() {
 function MenuList() {
   const { t } = useTranslation();
   const path = window.location.pathname.replace('/', '');
-  console.log(path);
   return (
     <ul className={s.category__list}>
       <li className={s.category__item}>
@@ -132,7 +143,7 @@ function MenuList() {
       </li>
       <li className={s.category__item}>
         <a
-          href="/store/new"
+          href="/store/news"
           className={`${s.category__link} ${
             path == 'store/new' ? s.category__link_active : ''
           }`}

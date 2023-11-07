@@ -14,11 +14,14 @@ import Input from '../../components/Input/Input';
 // styles
 import s from './Cart.module.scss';
 import RadioButton from '../../components/RadioButton/RadioButton';
+import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 
 function Cart() {
   const cartItems = useStore((state) => state.cartItems);
   const removeAllProducts = useStore((state) => state.removeAllProducts);
   const { t } = useTranslation();
+
+  useDocumentTitle(`${t('navigation.header.cart').toUpperCase()}`);
 
   const handleClick = () => {
     if (confirm(t('message.CleanTheCart'))) {

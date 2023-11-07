@@ -2,8 +2,8 @@ import { Dispatch, SetStateAction } from 'react';
 
 export interface ModalProps {
   closeModal: Dispatch<SetStateAction<boolean>>;
-  title: string;
-  body: string;
-  weight: string;
-  price: string;
+  title: string | undefined;
+  body: string | undefined;
+  weight: string | undefined;
+  price: string | undefined;
 }

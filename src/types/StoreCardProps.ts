@@ -4,4 +4,5 @@ export interface StoreCardProps {
   openModal: Dispatch<SetStateAction<boolean>>;
   title: string;
   price: string;
+  setProduct: () => void;
 }

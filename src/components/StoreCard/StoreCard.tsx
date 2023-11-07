@@ -9,7 +9,13 @@ function StoreCard(props: StoreCardProps) {
     <div className={s.card}>
       <h2 className={s.card__header}>{props.title}</h2>
       <p className={s.card__body}>{props.price}zł</p>
-      <button className={s.card__button} onClick={() => props.openModal(true)}>
+      <button
+        className={s.card__button}
+        onClick={() => {
+          props.openModal(true);
+          props.setProduct();
+        }}
+      >
         {t('modal.addToCart')}
       </button>
     </div>

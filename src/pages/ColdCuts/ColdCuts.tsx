@@ -1,13 +1,12 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChangeEvent, useState } from 'react';
 import { useStore } from '../../store/useStore';
 
 // components
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
-import Input from '../../components/Input/Input';
-import StoreCard from '../../components/StoreCard/StoreCard';
 import Modal from '../../components/Modal/Modal';
+import StoreCard from '../../components/StoreCard/StoreCard';
 
 // utils
 import { Pathname } from '../../utils/Pathname';
@@ -17,55 +16,27 @@ import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 
 // styles
 import s from '../Store/Store.module.scss';
-import { IAlcohol } from '../../types/IAlcohol';
+import { IProduct } from '../../types/IProduct';
 
-function Alcohols() {
-  const [errorMessage, setErrorMessage] = useState<string>('');
-  const [showAlcohols, setShowAlcohols] = useState<boolean>(false);
+function ColdCuts() {
+  const coldCuts = useStore((state) => state.coldCuts);
+
   const [openModal, setOpenModal] = useState<boolean>(false);
-
-  const [year, setYear] = useState<number>();
-  const [month, setMonth] = useState<number>();
-  const [day, setDay] = useState<number>();
-
-  const alcohols = useStore((state) => state.alcohols);
-  const { t } = useTranslation();
-  useDocumentTitle(`${t('navigation.header.storeAlcohols').toUpperCase()}`);
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setYear(Number(e.target.value.split('-')[0]));
-    setMonth(Number(e.target.value.split('-')[1]));
-    setDay(Number(e.target.value.split('-')[2]));
-  };
-
-  const [selectedProduct, setSelectedProduct] = useState<IAlcohol | undefined>(
-    alcohols[0],
+  const [selectedProduct, setSelectedProduct] = useState<IProduct | undefined>(
+    coldCuts[0],
   );
 
-  const handleSelectProduct = (id: number) => {
-    setSelectedProduct(alcohols[id]);
+  const handleClick = (id: number) => {
+    setSelectedProduct(coldCuts[id]);
   };
 
-  const handleClick = () => {
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    const currentDay = new Date().getDate();
-    const age = currentYear - Number(year);
-    if (
-      age < 18 ||
-      (age == 18 && Number(month) > currentMonth) ||
-      (age == 18 && Number(month) == currentMonth && Number(day) > currentDay)
-    ) {
-      setErrorMessage(t('store.tooYoung'));
-      setShowAlcohols(false);
-    } else {
-      setErrorMessage('');
-      setShowAlcohols(true);
-    }
-  };
+  // translation
+  const { t } = useTranslation();
 
+  // set document title
+  useDocumentTitle(`${t('navigation.header.storeColdCuts').toUpperCase()}`);
   return (
-    <>
+    <div>
       <Header />
       <div className={s.store__wrapper}>
         <div className={s.store__category}>
@@ -79,49 +50,20 @@ function Alcohols() {
               {t('homeURL')} /&nbsp;
               <span className="capitalize">{Pathname()}</span>
             </div>
-            <h2 className={s.list__header}>{t('store.alcohols')}</h2>
+            <h2 className={s.list__header}>{t('store.coldCuts')}</h2>
             <div className={s.list__breakline} />
             <p className={s.list__description}>
-              {t('store.alcoholsDescription')}
+              {t('store.coldCutsDescription')}
             </p>
           </div>
-          <div className="w-full h-1 bg-gray-200 mb-8" />
-          {!showAlcohols && (
-            <h4 className="text-md font-bold text-red-400 mb-6">
-              {t('store.info')}
-            </h4>
-          )}
           <div className="flex flex-wrap">
-            {!showAlcohols && (
-              <div>
-                <div>
-                  <Input
-                    type="date"
-                    placeholder="mm/dd/yyyy"
-                    id="age"
-                    name="age"
-                    label={t('store.ageValidation')}
-                    className={s.data__input}
-                    onChange={handleChange}
-                    required={false}
-                    onBlur={() => ''}
-                  />
-                  <div className="text-red-400 font-bold text-sm first-letter:uppercase mb-4">
-                    {errorMessage}
-                  </div>
-                </div>
-                <button className={s.data__btn} onClick={handleClick}>
-                  {t('store.accept')}
-                </button>
-              </div>
-            )}
-            {showAlcohols &&
-              alcohols.map((product, index) => (
+            {coldCuts &&
+              coldCuts.map((product, index) => (
                 <StoreCard
                   key={index}
                   title={product.title}
                   price={product.price}
-                  setProduct={() => handleSelectProduct(index)}
+                  setProduct={() => handleClick(index)}
                   openModal={setOpenModal}
                 />
               ))}
@@ -132,13 +74,13 @@ function Alcohols() {
         <Modal
           title={selectedProduct?.title}
           body={selectedProduct?.body}
-          weight={selectedProduct?.volume}
+          weight={selectedProduct?.weight}
           price={selectedProduct?.price}
           closeModal={setOpenModal}
         />
       )}
       <Footer />
-    </>
+    </div>
   );
 }
 
@@ -223,4 +165,4 @@ function MenuList() {
   );
 }
 
-export default Alcohols;
+export default ColdCuts;

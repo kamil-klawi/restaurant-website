@@ -6,7 +6,7 @@ import { IStore } from '../types/IStore';
 export const useStore = create<IStore>()(
   persist(
     (set) => ({
-      store: [
+      cheeses: [
         {
           title: 'Ser cambridge',
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
@@ -24,6 +24,20 @@ export const useStore = create<IStore>()(
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque.',
           price: '320',
           weight: '500g',
+        },
+      ],
+      coldCuts: [
+        {
+          title: 'Rosette',
+          body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
+          price: '12',
+          weight: '100g',
+        },
+        {
+          title: 'Pasztet',
+          body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
+          price: '11',
+          weight: '100g',
         },
       ],
       alcohols: [

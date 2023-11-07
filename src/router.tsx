@@ -7,6 +7,7 @@ import SpecialOffers from './pages/SpecialOffers/SpecialOffers';
 import Store from './pages/Store/Store';
 import Error from './pages/Error/Error';
 import Alcohols from './pages/Alcohols/Alcohols';
+import ColdCuts from './pages/ColdCuts/ColdCuts';
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +25,14 @@ export const router = createBrowserRouter([
   {
     path: '/store',
     element: <Store />,
+  },
+  {
+    path: '/store/cheeses',
+    element: <Store />,
+  },
+  {
+    path: '/store/cold_cuts',
+    element: <ColdCuts />,
   },
   {
     path: '/store/alcohols',
