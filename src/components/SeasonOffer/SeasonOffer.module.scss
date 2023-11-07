@@ -136,9 +136,15 @@ $color-white: #ffffff;
       text-decoration: none;
       text-transform: uppercase;
       background-color: $color-blue;
+      font-size: 1rem;
 
       @media screen and (min-width: 0px) and (max-width: 560px) {
         padding: 0.5rem;
+        font-size: 0.8rem;
+      }
+
+      @media screen and (min-width: 560px) and (max-width: 1024px) {
+        padding: 1rem;
       }
     }
   }
