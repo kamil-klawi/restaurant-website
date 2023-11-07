@@ -10,6 +10,8 @@ import Alcohols from './pages/Alcohols/Alcohols';
 import ColdCuts from './pages/ColdCuts/ColdCuts';
 import Catering from './pages/Catering/Catering';
 import Deli from './pages/Deli/Deli';
+import News from './pages/News/News';
+import Sales from './pages/Sales/Sales';
 
 export const router = createBrowserRouter([
   {
@@ -47,6 +49,14 @@ export const router = createBrowserRouter([
   {
     path: '/store/catering',
     element: <Catering />,
+  },
+  {
+    path: '/store/news',
+    element: <News />,
+  },
+  {
+    path: '/store/sales',
+    element: <Sales />,
   },
   {
     path: '/contact',
