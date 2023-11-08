@@ -46,7 +46,7 @@ function Cart() {
             </p>
             <a
               className="relative uppercase px-12 py-4 bg-blue-400 text-white tracking-wide"
-              href="/store"
+              href={t('url.store')}
             >
               {t('cart.btn')}
             </a>
@@ -67,6 +67,8 @@ function Cart() {
               weight={item.weight}
               title={item.title}
               price={item.price}
+              imageURL={item.imageURL}
+              imageALT={item.imageALT}
             />
           ))}
         {cartItems.length > 0 && (
@@ -85,20 +87,11 @@ function Cart() {
           >
             <div className="flex">
               <p className="text-blue-400">*&nbsp;</p>
-              <p className="text-sm">
-                W przypadku zamówienia alkoholu, dostępny jest wyłącznie odbiór
-                własny w restauracji.
-              </p>
+              <p className="text-sm">{t('cart.descAlcoOrder')}</p>
             </div>
             <div className="flex w-3/4">
               <p className="text-blue-400">**&nbsp;</p>
-              <p className="text-sm">
-                W przypadku zamówienia usługi cateringu, prosimy czekać na
-                kontakt zwrotny z restauracji informujący o terminie realizacji.
-                Dostępne sposoby dostawy, to wyłącznie odbiór własny w
-                restauracji, oraz dowóz przez restaurację, bez możliwości
-                zamówienia kuriera.
-              </p>
+              <p className="text-sm">{t('cart.descAlcoForm')}</p>
             </div>
             <div className="mt-24">
               <h2 className="text-4xl tracking-wide font-light text-black opacity-75 lg:text-2xl">

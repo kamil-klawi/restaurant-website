@@ -63,6 +63,8 @@ function ColdCuts() {
                   key={index}
                   title={product.title}
                   price={product.price}
+                  imageURL={product.imageURL}
+                  imageALT={product.imageALT}
                   setProduct={() => handleClick(index)}
                   openModal={setOpenModal}
                 />
@@ -76,6 +78,8 @@ function ColdCuts() {
           body={selectedProduct?.body}
           weight={selectedProduct?.weight}
           price={selectedProduct?.price}
+          imageURL={selectedProduct?.imageURL}
+          imageALT={selectedProduct?.imageALT}
           closeModal={setOpenModal}
         />
       )}

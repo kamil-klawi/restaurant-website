@@ -40,6 +40,11 @@ $color-blue: #0093DD;
     justify-content: flex-start;
     flex-direction: column;
 
+    .product__image {
+      width: 30%;
+      border-radius: 1rem;
+    }
+
     .product__title {
       color: $color-black;
       font-size: 2rem;

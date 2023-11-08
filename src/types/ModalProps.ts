@@ -6,4 +6,6 @@ export interface ModalProps {
   body: string | undefined;
   weight: string | undefined;
   price: string | undefined;
+  imageURL: string | undefined;
+  imageALT: string | undefined;
 }

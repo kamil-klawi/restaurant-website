@@ -328,7 +328,9 @@
     "postcodePlaceholder": "Enter postcode [XX-XXX]",
     "localityPlaceholder": "Enter locality",
     "phonePlaceholder": "Enter phone number",
-    "emailPlaceholder": "Enter email"
+    "emailPlaceholder": "Enter email",
+    "descAlcoOrder": "When ordering alcohol, only self-collection at the restaurant is available.",
+    "descAlcoForm": "If you order a catering service, please wait for a response from the restaurant informing you about the delivery date. Available delivery methods are only self-collection at the restaurant and delivery through the restaurant, without the possibility of ordering a courier."
   },
   "modal": {
     "buyNow": "buy now",

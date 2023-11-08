@@ -4,4 +4,6 @@ export interface IAlcohol {
   price: string;
   volume: string;
   percent: string;
+  imageURL: string;
+  imageALT: string;
 }

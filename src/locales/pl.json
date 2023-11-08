@@ -330,7 +330,9 @@
     "postcodePlaceholder": "Kod pocztowy [XX-XXX]",
     "localityPlaceholder": "Miejscowość",
     "phonePlaceholder": "Telefon kontaktowy",
-    "emailPlaceholder": "Adres e-mail"
+    "emailPlaceholder": "Adres e-mail",
+    "descAlcoOrder": "W przypadku zamówienia alkoholu, dostępny jest wyłącznie odbiór własny w restauracji.",
+    "descAlcoForm": "W przypadku zamówienia usługi cateringu, prosimy czekać na kontakt zwrotny z restauracji informujący o terminie realizacji. Dostępne sposoby dostawy, to wyłącznie odbiór własny w restauracji, oraz dowóz przez restaurację, bez możliwości zamówienia kuriera."
   },
   "modal": {
     "buyNow": "kup teraz",

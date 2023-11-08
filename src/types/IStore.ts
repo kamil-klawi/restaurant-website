@@ -13,6 +13,8 @@ export interface IStore {
     body: string,
     price: string,
     weight: string,
+    imageURL: string,
+    imageALT: string,
   ) => void;
   removeProduct: (title: string) => void;
   removeAllProducts: () => void;

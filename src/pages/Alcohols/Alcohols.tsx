@@ -121,6 +121,8 @@ function Alcohols() {
                   key={index}
                   title={product.title}
                   price={product.price}
+                  imageURL={product.imageURL}
+                  imageALT={product.imageALT}
                   setProduct={() => handleSelectProduct(index)}
                   openModal={setOpenModal}
                 />
@@ -134,6 +136,8 @@ function Alcohols() {
           body={selectedProduct?.body}
           weight={selectedProduct?.volume}
           price={selectedProduct?.price}
+          imageURL={selectedProduct?.imageURL}
+          imageALT={selectedProduct?.imageALT}
           closeModal={setOpenModal}
         />
       )}
