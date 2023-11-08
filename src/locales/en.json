@@ -340,5 +340,24 @@
   "message": {
     "AddProductToCart": "Product has been added to the cart",
     "CleanTheCart": "Do you want to clear your cart?"
+  },
+  "url": {
+    "homepage": "en",
+    "menu": "menu",
+    "specialOffer": "special_offers",
+    "store": "store",
+    "storeCheeses": "cheeses",
+    "storeColdCuts": "cold_cuts",
+    "storeDeli": "deli",
+    "storeAlcohols": "alcohols",
+    "storeCatering": "catering",
+    "storeNews": "news",
+    "storeSales": "sales",
+    "contact": "contact",
+    "cart": "cart"
+  },
+  "error": {
+    "header": "Error 404! Page not found",
+    "message": "Unfortunately, the page you are looking for does not exist or has been deleted."
   }
 }

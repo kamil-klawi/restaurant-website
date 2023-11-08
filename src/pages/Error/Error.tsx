@@ -7,18 +7,16 @@ function Error() {
   useDocumentTitle(`${t('navigation.header.error').toUpperCase()}`);
   return (
     <div className={s.error}>
-      <h1 className={s.error__header}>Błąd 404! Nie znaleziono strony</h1>
-      <p className={s.error__description}>
-        Niestety strony, której szukasz nie istnieje lub została usunięta.
-      </p>
+      <h1 className={s.error__header}>{t('error.header')}</h1>
+      <p className={s.error__description}>{t('error.message')}</p>
       <div className={s.error__list}>
-        <a className={s.error__list_btn} href="/">
+        <a className={s.error__list_btn} href={t('url.homepage')}>
           {t('backToHomepage')}
         </a>
-        <a className={s.error__list_btn} href="/store">
+        <a className={s.error__list_btn} href={t('url.store')}>
           {t('navigation.header.store')}
         </a>
-        <a className={s.error__list_btn} href="/contact">
+        <a className={s.error__list_btn} href={t('url.contact')}>
           {t('navigation.header.contact')}
         </a>
       </div>
