@@ -16,7 +16,7 @@ import { t } from 'i18next';
 
 export const router = createBrowserRouter([
   {
-    path: `${t('url.homepage')}`,
+    path: t('url.homepage'),
     element: <Homepage />,
   },
   {

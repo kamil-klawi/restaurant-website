@@ -149,9 +149,9 @@ function MenuList() {
     <ul className={s.category__list}>
       <li className={s.category__item}>
         <a
-          href="/store/cheeses"
+          href={t('url.storeCheeses')}
           className={`${s.category__link} ${
-            path == 'store/cheeses' || path == 'store'
+            path == t('url.storeCheeses') || path == t('url.store')
               ? s.category__link_active
               : ''
           }`}
@@ -161,9 +161,9 @@ function MenuList() {
       </li>
       <li className={s.category__item}>
         <a
-          href="/store/cold_cuts"
+          href={t('url.storeColdCuts')}
           className={`${s.category__link} ${
-            path == 'store/cold_cuts' ? s.category__link_active : ''
+            path == t('url.storeColdCuts') ? s.category__link_active : ''
           }`}
         >
           {t('navigation.store.cold_cuts')}
@@ -171,9 +171,9 @@ function MenuList() {
       </li>
       <li className={s.category__item}>
         <a
-          href="/store/deli"
+          href={t('url.storeDeli')}
           className={`${s.category__link} ${
-            path == 'store/deli' ? s.category__link_active : ''
+            path == t('url.storeDeli') ? s.category__link_active : ''
           }`}
         >
           {t('navigation.store.deli')}
@@ -181,9 +181,9 @@ function MenuList() {
       </li>
       <li className={s.category__item}>
         <a
-          href="/store/alcohols"
+          href={t('url.storeAlcohols')}
           className={`${s.category__link} ${
-            path == 'store/alcohols' ? s.category__link_active : ''
+            path == t('url.storeAlcohols') ? s.category__link_active : ''
           }`}
         >
           {t('navigation.store.alcohols')}
@@ -191,9 +191,9 @@ function MenuList() {
       </li>
       <li className={s.category__item}>
         <a
-          href="/store/catering"
+          href={t('url.storeCatering')}
           className={`${s.category__link} ${
-            path == 'store/catering' ? s.category__link_active : ''
+            path == t('url.storeCatering') ? s.category__link_active : ''
           }`}
         >
           {t('navigation.store.catering')}
@@ -201,9 +201,9 @@ function MenuList() {
       </li>
       <li className={s.category__item}>
         <a
-          href="/store/news"
+          href={t('url.storeNews')}
           className={`${s.category__link} ${
-            path == 'store/new' ? s.category__link_active : ''
+            path == t('url.storeNews') ? s.category__link_active : ''
           }`}
         >
           {t('navigation.store.new')}
@@ -211,9 +211,9 @@ function MenuList() {
       </li>
       <li className={s.category__item}>
         <a
-          href="/store/sales"
+          href={t('url.storeSales')}
           className={`${s.category__link} ${
-            path == 'store/sales' ? s.category__link_active : ''
+            path == t('url.storeSales') ? s.category__link_active : ''
           }`}
         >
           {t('navigation.store.sales')}
