@@ -12,58 +12,59 @@ import Catering from './pages/Catering/Catering';
 import Deli from './pages/Deli/Deli';
 import News from './pages/News/News';
 import Sales from './pages/Sales/Sales';
+import { t } from 'i18next';
 
 export const router = createBrowserRouter([
   {
-    path: '/',
+    path: `${t('url.homepage')}`,
     element: <Homepage />,
   },
   {
-    path: '/menu',
+    path: t('url.menu'),
     element: <Menu />,
   },
   {
-    path: '/special_offers',
+    path: t('url.specialOffer'),
     element: <SpecialOffers />,
   },
   {
-    path: '/store',
+    path: t('url.store'),
     element: <Store />,
   },
   {
-    path: '/store/cheeses',
+    path: t('url.storeCheeses'),
     element: <Store />,
   },
   {
-    path: '/store/cold_cuts',
+    path: t('url.storeColdCuts'),
     element: <ColdCuts />,
   },
   {
-    path: '/store/deli',
+    path: t('url.storeDeli'),
     element: <Deli />,
   },
   {
-    path: '/store/alcohols',
+    path: t('url.storeAlcohols'),
     element: <Alcohols />,
   },
   {
-    path: '/store/catering',
+    path: t('url.storeCatering'),
     element: <Catering />,
   },
   {
-    path: '/store/news',
+    path: t('url.storeNews'),
     element: <News />,
   },
   {
-    path: '/store/sales',
+    path: t('url.storeSales'),
     element: <Sales />,
   },
   {
-    path: '/contact',
+    path: t('url.contact'),
     element: <Contact />,
   },
   {
-    path: '/cart',
+    path: t('url.cart'),
     element: <Cart />,
   },
   {

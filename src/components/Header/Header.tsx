@@ -6,6 +6,7 @@ import { useStore } from '../../store/useStore';
 import { useState } from 'react';
 
 function Header() {
+  const { t } = useTranslation();
   const [isOpen, setOpen] = useState<boolean>(false);
   const cartItems = useStore((state) => state.cartItems);
 
@@ -22,7 +23,7 @@ function Header() {
   return (
     <header className={s.header}>
       <nav className={s.nav}>
-        <a href="" className={s.nav__logo}>
+        <a href={t('url.homepage')} className={s.nav__logo}>
           <img
             src={alafrancaiseLogo}
             alt="a la francaise logo"
@@ -61,7 +62,7 @@ function Header() {
             <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
           </svg>
         </button>
-        <a href="/cart" className={s.nav__cart}>
+        <a href={t('url.cart')} className={s.nav__cart}>
           <CartIcon />
           &nbsp;
           <span className="font-bold">{cartItems.length}</span>
@@ -83,17 +84,19 @@ function MenuList() {
     <ul className={s.nav__list}>
       <li className={s.nav__item}>
         <a
-          href="/"
-          className={`${s.nav__link} ${path == '' ? s.nav__link_active : ''}`}
+          href={t('url.homepage')}
+          className={`${s.nav__link} ${
+            path == t('url.homepage') ? s.nav__link_active : ''
+          }`}
         >
           {t('navigation.header.bonjour')}
         </a>
       </li>
       <li className={s.nav__item}>
         <a
-          href="/menu"
+          href={t('url.menu')}
           className={`${s.nav__link} ${
-            path == 'menu' ? s.nav__link_active : ''
+            path == t('url.menu') ? s.nav__link_active : ''
           }`}
         >
           {t('navigation.header.menu')}
@@ -101,9 +104,9 @@ function MenuList() {
       </li>
       <li className={s.nav__item}>
         <a
-          href="/special_offers"
+          href={t('url.specialOffer')}
           className={`${s.nav__link} ${
-            path == 'special_offers' ? s.nav__link_active : ''
+            path == t('url.specialOffer') ? s.nav__link_active : ''
           }`}
         >
           {t('navigation.header.specialOffer')}
@@ -111,9 +114,9 @@ function MenuList() {
       </li>
       <li className={s.nav__item}>
         <a
-          href="/store"
+          href={t('url.store')}
           className={`${s.nav__link} ${
-            path == 'store' ? s.nav__link_active : ''
+            path == t('url.store') ? s.nav__link_active : ''
           }`}
         >
           {t('navigation.header.store')}
@@ -121,9 +124,9 @@ function MenuList() {
       </li>
       <li className={s.nav__item}>
         <a
-          href="/contact"
+          href={t('url.contact')}
           className={`${s.nav__link} ${
-            path == 'contact' ? s.nav__link_active : ''
+            path == t('url.contact') ? s.nav__link_active : ''
           }`}
         >
           {t('navigation.header.contact')}
@@ -149,22 +152,22 @@ function HamburgerMenu() {
         </a>
       </li>
       <li className={s.hamburger__item}>
-        <a href="/special_offers" className={s.hamburger__link}>
+        <a href={t('url.specialOffer')} className={s.hamburger__link}>
           {t('navigation.header.specialOffer')}
         </a>
       </li>
       <li className={s.hamburger__item}>
-        <a href="/store" className={s.hamburger__link}>
+        <a href={t('url.store')} className={s.hamburger__link}>
           {t('navigation.header.store')}
         </a>
       </li>
       <li className={s.hamburger__item}>
-        <a href="/contact" className={s.hamburger__link}>
+        <a href={t('url.contact')} className={s.hamburger__link}>
           {t('navigation.header.contact')}
         </a>
       </li>
       <li>
-        <a href="/cart" className={s.hamburger__cart}>
+        <a href={t('url.cart')} className={s.hamburger__cart}>
           <CartIcon />
           &nbsp;
           <span className="font-bold">{cartItems.length}</span>
