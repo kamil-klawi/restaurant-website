@@ -1,4 +1,5 @@
 export interface IAlcohol {
+  tag: string;
   title: string;
   body: string;
   price: string;

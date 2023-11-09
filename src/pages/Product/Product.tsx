@@ -1,40 +1,33 @@
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { FormEvent } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import CounterPick from '../../components/Picker/CounterPick';
+import RadioButton from '../../components/RadioButton/RadioButton';
 import { useStore } from '../../store/useStore';
-
-// components
-import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Header/Header';
-import Modal from '../../components/Modal/Modal';
-import StoreCard from '../../components/StoreCard/StoreCard';
-
-// utils
-import { Pathname } from '../../utils/Pathname';
-
-// hooks
-import { useDocumentTitle } from '../../hooks/useDocumentTitle';
-
-// styles
-import s from './Store.module.scss';
+import { useTranslation } from 'react-i18next';
 import { IProduct } from '../../types/IProduct';
+import s from '../Store/Store.module.scss';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
-function Store() {
-  const cheeses = useStore((state) => state.cheeses);
-
-  const [openModal, setOpenModal] = useState<boolean>(false);
-  const [selectedProduct, setSelectedProduct] = useState<IProduct | undefined>(
-    cheeses[0],
-  );
-
-  const handleClick = (id: number) => {
-    setSelectedProduct(cheeses[id]);
-  };
-
-  // translation
+function Product(props: IProduct) {
+  const addProduct = useStore((state) => state.addProduct);
   const { t } = useTranslation();
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  // set document title
-  useDocumentTitle(`${t('navigation.header.store').toUpperCase()}`);
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault;
+    alert(t('message.AddProductToCart'));
+    addProduct(
+      props.title,
+      props.body,
+      props.price,
+      props.weight,
+      props.imageURL,
+      props.imageALT,
+    );
+    navigate(t('url.store'));
+  };
   return (
     <div>
       <Header />
@@ -46,45 +39,54 @@ function Store() {
         </div>
         <div className={s.store__list}>
           <div className={s.store__content}>
-            <div className={`${s.store__pathname} my-8`}>
-              {t('homeURL')} /&nbsp;
-              <span className="capitalize">{Pathname()}</span>
+            <img
+              className="w-full h-80 object-cover"
+              src={location.state.imageURL}
+              alt={location.state.imageALT}
+            />
+            <h4 className="text-md text-blue-400 uppercase py-4">
+              {location.state.tag}
+            </h4>
+            <h2 className="text-4xl capitalize">{location.state.title}</h2>
+            <div className="w-full h-1 bg-gray-200 my-8" />
+            <p>{location.state.body}</p>
+            <div>
+              <form onSubmit={handleSubmit} className={s.product__form}>
+                <div className={s.product__container}>
+                  <div>
+                    <label className={s.product__label}>
+                      {t('modal.weightToChoose')}
+                    </label>
+                    <RadioButton
+                      checked={true}
+                      label={location.state.weight}
+                      name="radio"
+                    />
+                  </div>
+                  <div>
+                    <label className={s.modal__label}>{t('modal.price')}</label>
+                    <p className={s.product__price}>{location.state.price}zł</p>
+                  </div>
+                  <div>
+                    <label className={s.product__label}>
+                      {t('modal.amount')}
+                    </label>
+                    <CounterPick />
+                  </div>
+                </div>
+                <div>
+                  <button className={s.product__btn} type="submit">
+                    {t('modal.buyNow')}
+                  </button>
+                  <button className={s.product__btn} type="submit">
+                    {t('modal.addToCart')}
+                  </button>
+                </div>
+              </form>
             </div>
-            <h2 className={s.list__header}>{t('store.cheeses')}</h2>
-            <div className={s.list__breakline} />
-            <p className={s.list__description}>
-              {t('store.cheeseDescription')}
-            </p>
-          </div>
-          <div className="flex flex-wrap">
-            {cheeses &&
-              cheeses.map((product, index) => (
-                <StoreCard
-                  key={index}
-                  tag={product.tag}
-                  title={product.title}
-                  price={product.price}
-                  imageURL={product.imageURL}
-                  imageALT={product.imageALT}
-                  setProduct={() => handleClick(index)}
-                  openModal={setOpenModal}
-                />
-              ))}
           </div>
         </div>
       </div>
-      {openModal && (
-        <Modal
-          tag={selectedProduct?.tag}
-          title={selectedProduct?.title}
-          body={selectedProduct?.body}
-          weight={selectedProduct?.weight}
-          price={selectedProduct?.price}
-          imageURL={selectedProduct?.imageURL}
-          imageALT={selectedProduct?.imageALT}
-          closeModal={setOpenModal}
-        />
-      )}
       <Footer />
     </div>
   );
@@ -171,4 +173,4 @@ function MenuList() {
   );
 }
 
-export default Store;
+export default Product;

@@ -1,4 +1,5 @@
 export interface IProduct {
+  tag: string;
   title: string;
   body: string;
   price: string;

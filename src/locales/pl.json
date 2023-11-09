@@ -358,7 +358,22 @@
     "storeNews": "nowosci",
     "storeSales": "promocje",
     "contact": "kontakt",
-    "cart": "koszyk"
+    "cart": "koszyk",
+    "products": {
+      "storeCambridge": "/sklep/Ser-cambridge",
+      "storeRural": "/sklep/Ser-wiejski",
+      "storeSyr": "/sklep/Syr",
+      "cheesesCambridge": "/sery/Ser-cambridge",
+      "cheesesRural": "/sery/Ser-wiejski",
+      "cheesesSyr": "/sery/Syr",
+      "coldCutsRosette": "/wedliny/Rosette",
+      "coldCutsPie": "/wedliny/Pasztet",
+      "deliOnionJam": "/delikatesy/Konfitura-z-cebuli",
+      "deliGooseLard": "/delikatesy/Smalec-z-gęsi",
+      "cateringTastingBoard": "/catering/Deska-degustacyjna",
+      "cateringQuiche": "/catering/Quiche",
+      "alcoholsWine": "/alkohole/Winko"
+    }
   },
   "error": {
     "header": "Błąd 404! Nie znaleziono strony",

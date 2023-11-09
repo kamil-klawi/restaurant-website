@@ -356,7 +356,22 @@
     "storeNews": "news",
     "storeSales": "sales",
     "contact": "contact",
-    "cart": "cart"
+    "cart": "cart",
+    "products": {
+      "storeCambridge": "/store/Ser-cambridge",
+      "storeRural": "/store/Ser-wiejski",
+      "storeSyr": "/store/Syr",
+      "cheesesCambridge": "/cheeses/Ser-cambridge",
+      "cheesesRural": "/cheeses/Ser-wiejski",
+      "cheesesSyr": "/cheeses/Syr",
+      "coldCutsRosette": "/cold_cuts/Rosette",
+      "coldCutsPie": "/cold_cuts/Pasztet",
+      "deliOnionJam": "/deli/Konfitura-z-cebuli",
+      "deliGooseLard": "/deli/Smalec-z-gęsi",
+      "cateringTastingBoard": "/catering/Deska-degustacyjna",
+      "cateringQuiche": "/catering/Quiche",
+      "alcoholsWine": "/alcohols/Winko"
+    }
   },
   "error": {
     "header": "Error 404! Page not found",

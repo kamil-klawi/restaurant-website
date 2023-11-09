@@ -13,6 +13,7 @@ import Deli from './pages/Deli/Deli';
 import News from './pages/News/News';
 import Sales from './pages/Sales/Sales';
 import { t } from 'i18next';
+import Product from './pages/Product/Product';
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,46 @@ export const router = createBrowserRouter([
   {
     path: t('url.store'),
     element: <Store />,
+  },
+  {
+    path: t('url.products.cheesesCambridge'),
+    element: <Product />,
+  },
+  {
+    path: t('url.products.cheesesRural'),
+    element: <Product />,
+  },
+  {
+    path: t('url.products.cheesesSyr'),
+    element: <Product />,
+  },
+  {
+    path: t('url.products.coldCutsRosette'),
+    element: <Product />,
+  },
+  {
+    path: t('url.products.coldCutsPie'),
+    element: <Product />,
+  },
+  {
+    path: t('url.products.deliOnionJam'),
+    element: <Product />,
+  },
+  {
+    path: t('url.products.deliGooseLard'),
+    element: <Product />,
+  },
+  {
+    path: t('url.products.cateringTastingBoard'),
+    element: <Product />,
+  },
+  {
+    path: t('url.products.cateringQuiche'),
+    element: <Product />,
+  },
+  {
+    path: t('url.products.alcoholsWine'),
+    element: <Product />,
   },
   {
     path: t('url.storeCheeses'),

@@ -6,6 +6,7 @@ import RadioButton from '../RadioButton/RadioButton';
 import s from './Modal.module.scss';
 import { useStore } from '../../store/useStore';
 import { FormEvent } from 'react';
+import { Link } from 'react-router-dom';
 
 function Modal(props: ModalProps) {
   const addProduct = useStore((state) => state.addProduct);
@@ -63,9 +64,21 @@ function Modal(props: ModalProps) {
             </div>
           </div>
           <div>
-            <button className={s.modal__btn} type="submit">
+            <Link
+              to={props.title?.replaceAll(' ', '-')}
+              state={{
+                tag: props.tag,
+                title: props.title,
+                body: props.body,
+                price: props.price,
+                weight: props.weight,
+                imageURL: props.imageURL,
+                imageALT: props.imageALT,
+              }}
+              className={s.modal__btn}
+            >
               {t('modal.buyNow')}
-            </button>
+            </Link>
             <button className={s.modal__btn} type="submit">
               {t('modal.addToCart')}
             </button>

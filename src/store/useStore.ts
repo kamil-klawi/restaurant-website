@@ -19,6 +19,7 @@ export const useStore = create<IStore>()(
     (set) => ({
       cheeses: [
         {
+          tag: 'sery',
           title: 'Ser cambridge',
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
           price: '180',
@@ -27,6 +28,7 @@ export const useStore = create<IStore>()(
           imageALT: 'Ser cambridge',
         },
         {
+          tag: 'sery',
           title: 'Ser wiejski',
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
           price: '280',
@@ -35,6 +37,7 @@ export const useStore = create<IStore>()(
           imageALT: 'Ser wiejski',
         },
         {
+          tag: 'sery',
           title: 'Syr',
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque.',
           price: '320',
@@ -45,6 +48,7 @@ export const useStore = create<IStore>()(
       ],
       coldCuts: [
         {
+          tag: 'wędliny',
           title: 'Rosette',
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
           price: '12',
@@ -53,6 +57,7 @@ export const useStore = create<IStore>()(
           imageALT: 'Rosette',
         },
         {
+          tag: 'wędliny',
           title: 'Pasztet',
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
           price: '11',
@@ -63,6 +68,7 @@ export const useStore = create<IStore>()(
       ],
       deli: [
         {
+          tag: 'delikatesy',
           title: 'Konfitura z cebuli',
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
           price: '19',
@@ -71,6 +77,7 @@ export const useStore = create<IStore>()(
           imageALT: 'Konfitura z cebuli',
         },
         {
+          tag: 'delikatesy',
           title: 'Smalec z gęsi',
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
           price: '30',
@@ -81,6 +88,7 @@ export const useStore = create<IStore>()(
       ],
       catering: [
         {
+          tag: 'catering',
           title: 'Deska degustacyjna',
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
           price: '55',
@@ -89,6 +97,7 @@ export const useStore = create<IStore>()(
           imageALT: 'Deska degustacyjna',
         },
         {
+          tag: 'catering',
           title: 'Quiche',
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
           price: '95',
@@ -99,6 +108,7 @@ export const useStore = create<IStore>()(
       ],
       alcohols: [
         {
+          tag: 'alkohole',
           title: 'Winko',
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue pharetra convallis. Proin rhoncus consequat purus eget congue. Sed vehicula enim consequat eros congue lacinia. Fusce placerat vel sem vel scelerisque. Waga produktu: 300g',
           price: '180',
