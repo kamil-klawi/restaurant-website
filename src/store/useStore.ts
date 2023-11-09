@@ -13,6 +13,9 @@ import Image_007 from '../assets/images/13-DELIKATESY_smalec-z-gesii.png';
 import Image_008 from '../assets/images/30-CATERING_skrzynka.png';
 import Image_009 from '../assets/images/32-CATERING_placek.png';
 import Image_010 from '../assets/images/27-ALKOHOLE_cydr-brut.png';
+import axios from 'axios';
+
+// import i18next from 'i18next';
 
 export const useStore = create<IStore>()(
   persist(
@@ -118,6 +121,11 @@ export const useStore = create<IStore>()(
           imageALT: 'Winko',
         },
       ],
+      seasonOffer: [],
+      fetchOffer: async (url) => {
+        const response = await axios.get(url);
+        set({ seasonOffer: await response.data });
+      },
       cartItems: [],
       addProduct: (
         title: string,

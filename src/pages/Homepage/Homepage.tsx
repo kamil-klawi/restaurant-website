@@ -9,10 +9,19 @@ import SeasonOffer from '../../components/SeasonOffer/SeasonOffer';
 import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 
 import s from './Homepage.module.scss';
+import { useStore } from '../../store/useStore';
+import { useEffect } from 'react';
 
 function Homepage() {
+  const seasonOffer = useStore((state) => state.seasonOffer);
+  const fetchOffer = useStore((state) => state.fetchOffer);
   const { t } = useTranslation();
   useDocumentTitle(`${t('homeURL').toUpperCase()}`);
+
+  useEffect(() => {
+    fetchOffer('http://localhost:3000/offers');
+  }, []);
+
   return (
     <>
       <Header />
@@ -25,7 +34,12 @@ function Homepage() {
       <div className={`${s.homepage__image} ${s.homepage__image_second}`}>
         <h3 className={s.homepage__header}>{t('homepage.secondSlogan')}</h3>
       </div>
-      <SeasonOffer />
+      <SeasonOffer
+        title={seasonOffer[0].title}
+        subText={seasonOffer[0].subText}
+        body={seasonOffer[0].body}
+        btn={seasonOffer[0].btn}
+      />
       <Newsletter />
       <Footer />
     </>

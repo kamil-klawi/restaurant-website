@@ -1,5 +1,6 @@
 import { IAlcohol } from './IAlcohol';
 import { IProduct } from './IProduct';
+import { ISeasonOffer } from './ISeasonOffer';
 
 export interface IStore {
   cheeses: IProduct[];
@@ -7,6 +8,8 @@ export interface IStore {
   deli: IProduct[];
   catering: IProduct[];
   alcohols: IAlcohol[];
+  seasonOffer: ISeasonOffer;
+  fetchOffer: (url: string) => void;
   cartItems: IProduct[];
   addProduct: (
     title: string,

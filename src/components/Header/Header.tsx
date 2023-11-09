@@ -142,12 +142,12 @@ function HamburgerMenu() {
   return (
     <ul className={s.hamburger__list}>
       <li className={s.hamburger__item}>
-        <a href="/" className={s.hamburger__link}>
+        <a href={t('url.homepage')} className={s.hamburger__link}>
           {t('navigation.header.bonjour')}
         </a>
       </li>
       <li className={s.hamburger__item}>
-        <a href="/menu" className={s.hamburger__link}>
+        <a href={t('url.menu')} className={s.hamburger__link}>
           {t('navigation.header.menu')}
         </a>
       </li>
