@@ -78,7 +78,7 @@ function Header() {
 }
 
 function MenuList() {
-  const path = window.location.pathname.replace('/', '');
+  const path = window.location.pathname;
   const { t } = useTranslation();
   return (
     <ul className={s.nav__list}>
