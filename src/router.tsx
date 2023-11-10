@@ -14,6 +14,7 @@ import News from './pages/News/News';
 import Sales from './pages/Sales/Sales';
 import { t } from 'i18next';
 import Product from './pages/Product/Product';
+import { RouteToProduct } from './components/Modal/Modal';
 
 export const router = createBrowserRouter([
   {
@@ -33,55 +34,35 @@ export const router = createBrowserRouter([
     element: <Store />,
   },
   {
-    path: t('url.products.storeCambridge'),
+    path: `${t('url.products.storeProduct')}/:${RouteToProduct}`,
     element: <Product />,
   },
   {
-    path: t('url.products.storeRural'),
+    path: `${t('url.products.storeProductCheeses')}/:${RouteToProduct}`,
     element: <Product />,
   },
   {
-    path: t('url.products.storeSyr'),
+    path: `${t('url.products.storeProductColdCuts')}/:${RouteToProduct}`,
     element: <Product />,
   },
   {
-    path: t('url.products.cheesesCambridge'),
+    path: `${t('url.products.storeProductDeli')}/:${RouteToProduct}`,
     element: <Product />,
   },
   {
-    path: t('url.products.cheesesRural'),
+    path: `${t('url.products.storeProductAlcohols')}/:${RouteToProduct}`,
     element: <Product />,
   },
   {
-    path: t('url.products.cheesesSyr'),
+    path: `${t('url.products.storeProductCatering')}/:${RouteToProduct}`,
     element: <Product />,
   },
   {
-    path: t('url.products.coldCutsRosette'),
+    path: `${t('url.products.storeProductNews')}/:${RouteToProduct}`,
     element: <Product />,
   },
   {
-    path: t('url.products.coldCutsPie'),
-    element: <Product />,
-  },
-  {
-    path: t('url.products.deliOnionJam'),
-    element: <Product />,
-  },
-  {
-    path: t('url.products.deliGooseLard'),
-    element: <Product />,
-  },
-  {
-    path: t('url.products.cateringTastingBoard'),
-    element: <Product />,
-  },
-  {
-    path: t('url.products.cateringQuiche'),
-    element: <Product />,
-  },
-  {
-    path: t('url.products.alcoholsWine'),
+    path: `${t('url.products.storeProductSales')}/:${RouteToProduct}`,
     element: <Product />,
   },
   {

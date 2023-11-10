@@ -358,19 +358,14 @@
     "contact": "/en/contact",
     "cart": "/en/cart",
     "products": {
-      "storeCambridge": "/en/store/Ser-cambridge",
-      "storeRural": "/en/store/Ser-wiejski",
-      "storeSyr": "/en/store/Syr",
-      "cheesesCambridge": "/en/store/cheeses/Ser-cambridge",
-      "cheesesRural": "/en/store/cheeses/Ser-wiejski",
-      "cheesesSyr": "/en/store/cheeses/Syr",
-      "coldCutsRosette": "/en/store/cold_cuts/Rosette",
-      "coldCutsPie": "/en/store/cold_cuts/Pasztet",
-      "deliOnionJam": "/en/store/deli/Konfitura-z-cebuli",
-      "deliGooseLard": "/en/store/deli/Smalec-z-gęsi",
-      "cateringTastingBoard": "/en/store/catering/Deska-degustacyjna",
-      "cateringQuiche": "/en/store/catering/Quiche",
-      "alcoholsWine": "/en/store/alcohols/Winko"
+      "storeProduct": "/en/store",
+      "storeProductCheeses": "/en/store/cheeses",
+      "storeProductColdCuts": "/en/store/cold_cuts",
+      "storeProductDeli": "/en/store/deli",
+      "storeProductAlcohols": "/en/store/alcohols",
+      "storeProductCatering": "/en/store/catering",
+      "storeProductNews": "/en/store/news",
+      "storeProductSales": "/en/store/sales"
     }
   },
   "error": {

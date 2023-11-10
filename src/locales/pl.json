@@ -360,19 +360,14 @@
     "contact": "/kontakt",
     "cart": "/koszyk",
     "products": {
-      "storeCambridge": "/sklep/Ser-cambridge",
-      "storeRural": "/sklep/Ser-wiejski",
-      "storeSyr": "/sklep/Syr",
-      "cheesesCambridge": "/sklep/sery/Ser-cambridge",
-      "cheesesRural": "/sklep/sery/Ser-wiejski",
-      "cheesesSyr": "/sklep/sery/Syr",
-      "coldCutsRosette": "/sklep/wedliny/Rosette",
-      "coldCutsPie": "/sklep/wedliny/Pasztet",
-      "deliOnionJam": "/sklep/delikatesy/Konfitura-z-cebuli",
-      "deliGooseLard": "/sklep/delikatesy/Smalec-z-gęsi",
-      "cateringTastingBoard": "/sklep/catering/Deska-degustacyjna",
-      "cateringQuiche": "/sklep/catering/Quiche",
-      "alcoholsWine": "/sklep/alkohole/Winko"
+      "storeProduct": "/sklep",
+      "storeProductCheeses": "/sklep/sery",
+      "storeProductColdCuts": "/sklep/wedlimy",
+      "storeProductDeli": "/sklep/delikatesy",
+      "storeProductAlcohols": "/sklep/alkohole",
+      "storeProductCatering": "/sklep/catering",
+      "storeProductNews": "/sklep/nowosci",
+      "storeProductSales": "/sklep/promocje"
     }
   },
   "error": {

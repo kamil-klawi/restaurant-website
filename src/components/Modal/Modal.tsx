@@ -8,9 +8,13 @@ import { useStore } from '../../store/useStore';
 import { FormEvent } from 'react';
 import { Link } from 'react-router-dom';
 
+export let RouteToProduct: string | undefined;
+
 function Modal(props: ModalProps) {
   const addProduct = useStore((state) => state.addProduct);
   const { t } = useTranslation();
+
+  RouteToProduct = props.title?.replaceAll(' ', '-');
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault;
