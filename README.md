@@ -1,6 +1,8 @@
 # Ala Francaise
 
-This is a simple restaurant website
+The project involves recreating the website of the A'la Francaise restaurant. Below is a link to the original page that I based the look of the site on.
+
+[Ala Francaise](https://www.alafrancaise.pl/)
 
 ## Technologies stack used in the project
 
